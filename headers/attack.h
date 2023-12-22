@@ -10,6 +10,10 @@
 using namespace std;
 
 struct Attack {
+    /**
+     * @brief The name of the attack
+     * @details The name of the attack
+     */
     int energyCost;
     int actualEnergyCost;
     string description;

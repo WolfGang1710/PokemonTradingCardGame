@@ -9,16 +9,16 @@
 #include "Card.h"
 
 class EnergyCard : public Card{
-    private:
+//protected:
+//    string CardName="Energy";
+private:
     string cardName="Energy";
     string energyType;
 public:
-    EnergyCard(string energyType);
-    string getCardName();
-    string getEnergyType();
-    void setEnergyType(string energyType);
-    void setCardName(string cardName);
-    void displayCard();
+    EnergyCard(const string energyType);
+
+    string getCardName() const;
+    string getEnergyType() const;
 };
 
 

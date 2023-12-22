@@ -20,13 +20,23 @@ private:
 
 public:
     Player(string playerName);
-    void addCardToBench(const Card*);
+
+    void addCardToBench(Card*);
+    void removeCardFromBench(const int index);
+    void removeCardFromAction(const int index);
+
     void activatePokemonCard(const int);
+
     void attachEnergyCard(const int, const int);
+
     void displayBench();
     void displayAction();
+
     void attack(const int, const int, const Player, const int);
+
     void useTrainer();
+
+    string getPlayerName() const;
 };
 
 

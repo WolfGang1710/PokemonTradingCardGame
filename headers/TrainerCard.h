@@ -13,7 +13,9 @@ private:
     string cardName;
     string trainerEffect;
 public:
-    TrainerCard(string Trainer, string trainerEffect);
+    TrainerCard(const string trainerName, const string trainerEffect);
+    string getCardName() const;
+    string getTrainerEffect() const;
 };
 
 

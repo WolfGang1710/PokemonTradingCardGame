@@ -14,6 +14,7 @@ using namespace std;
 
 class PokemonCard: public Card {
 private:
+    string pokemonName;
     string pokemonType;
     string familyName;
     int evolutionLevel;
@@ -26,7 +27,15 @@ private:
      * 1 tuple = cout en énergie, cout en énergie actuel, descriptoin, dégât
      */
 public:
-    PokemonCard(string, string, string, )
+    PokemonCard(string pokemonName, string pokemonType, string familyName,
+                int evolution_Level, int maxHP, int HP, Attacks attacks);
+    string getPokemonName() const;
+    string getPokemonType() const;
+    string getFamilyName() const;
+    int getEvolutionLevel() const;
+    int getMaxHP() const;
+    int getHP() const;
+    Attacks getAttacks() const;
 };
 
 
