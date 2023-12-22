@@ -2,7 +2,7 @@
 // Created by ecole on 22/12/2023.
 //
 
-#include "Player.h"
+#include "headers/Player.h"
 
 void Player::addCardToBench(const Card *) {
 }

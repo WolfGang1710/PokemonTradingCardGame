@@ -6,7 +6,7 @@
 #define POKEMONTRADINGCARDGAME_ATTACKS_H
 
 #include <vector>
-#include "Attack.h"
+#include "attack.h"
 
 struct Attacks {
     vector<Attack> attacks;
