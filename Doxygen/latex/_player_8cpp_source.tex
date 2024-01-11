@@ -1,4 +1,4 @@
-\doxysection{Player.\+cpp}
+\doxysection{C\+:/\+Users/ecole/\+One\+Drive -\/ uha.\+fr/\+Documents/\+Dev/\+C++/\+Pokemon\+Trading\+Card\+Game/\+Player.cpp}
 \hypertarget{_player_8cpp_source}{}\label{_player_8cpp_source}\mbox{\hyperlink{_player_8cpp}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00001}00001\ \textcolor{comment}{//}}
@@ -25,12 +25,6 @@
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00022}00022\ \}}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00023}00023\ }
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00024}\mbox{\hyperlink{class_player_a8cf6ce8c81531c3cebae6a9efafcaa17}{00024}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a8cf6ce8c81531c3cebae6a9efafcaa17}{Player::addCardToBench}}(\mbox{\hyperlink{class_card}{Card}}*\ card)\ \{}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00025}00025\ \ \ \ \ \textcolor{comment}{/*}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00026}00026\ \textcolor{comment}{\ \ \ \ \ *\ @brief:\ add\ a\ card\ to\ the\ bench}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00027}00027\ \textcolor{comment}{\ \ \ \ \ *\ @details:\ if\ it\ is\ a\ PokemonCard,\ add\ it\ to\ the\ actionCards\ vector,\ if\ it\ is\ a\ TrainerCard,\ add\ it\ to\ the\ trainerCards\ vector,\ otherwise\ add\ it\ to\ the\ benchCards\ vector}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00028}00028\ \textcolor{comment}{\ \ \ \ \ *\ @param:\ \`{}card`:\ pointer\ to\ the\ card\ to\ add}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00029}00029\ \textcolor{comment}{\ \ \ \ \ *\ @return:\ none}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00030}00030\ \textcolor{comment}{\ \ \ \ \ */}}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00031}00031\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_pokemon_card}{PokemonCard}}*\ pokemonCard\ =\ \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{class_pokemon_card}{PokemonCard}}*\textcolor{keyword}{>}(card))\ \{}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ actionCards.push\_back(pokemonCard);}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00033}00033\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_trainer_card}{TrainerCard}}*\ trainerCard\ =\ \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{class_trainer_card}{TrainerCard}}*\textcolor{keyword}{>}(card))\ \{}
@@ -41,13 +35,6 @@
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00038}00038\ \}}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00039}00039\ }
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00040}\mbox{\hyperlink{class_player_a91f6319a7b7b9180697167c57c5ffdf4}{00040}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a91f6319a7b7b9180697167c57c5ffdf4}{Player::activatePokemonCard}}(\textcolor{keywordtype}{size\_t}\ cardIndex)\ \{}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00041}00041\ \ \ \ \ \textcolor{comment}{/*}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00042}00042\ \textcolor{comment}{\ \ \ \ \ *\ @brief:\ activate\ a\ PokemonCard}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00043}00043\ \textcolor{comment}{\ \ \ \ \ *\ @details:\ if\ the\ cardIndex\ is\ valid,\ activate\ the\ PokemonCard\ at\ the\ given\ index}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00044}00044\ \textcolor{comment}{\ \ \ \ \ *\ @param:\ \`{}cardIndex`:\ index\ of\ the\ PokemonCard\ to\ activate}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00045}00045\ \textcolor{comment}{\ \ \ \ \ *\ @return:\ none}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00046}00046\ \textcolor{comment}{\ \ \ \ \ *\ @bug\ :\ When\ running\ the\ program,\ the\ error\ is\ raised,\ but\ not\ at\ the\ same\ place,\ but\ the\ program\ continues\ to\ run.}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00047}00047\ \textcolor{comment}{\ \ \ \ \ */}}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00048}00048\ \ \ \ \ \textcolor{comment}{//\ pas\ besoin\ de\ vérifier\ si\ cardIndex\ <\ 0\ car\ size\_t\ est\ un\ unsigned\ int}}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00049}00049\ \ \ \ \ \textcolor{keywordflow}{if}\ (cardIndex\ <\ actionCards.size())\ \{}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00050}00050\ \ \ \ \ \ \ \ \ \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{class_pokemon_card}{PokemonCard}}*\textcolor{keyword}{>}(actionCards[cardIndex])-\/>activate();}
@@ -59,14 +46,6 @@
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00056}00056\ \}}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00057}00057\ }
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00058}\mbox{\hyperlink{class_player_ac2f3e76899614d2aa0d3b03f06929230}{00058}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_ac2f3e76899614d2aa0d3b03f06929230}{Player::attachEnergyCard}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{size\_t}\ pokemonIndex,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{size\_t}\ energyIndex)\ \{}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00059}00059\ \ \ \ \ \textcolor{comment}{/*}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00060}00060\ \textcolor{comment}{\ \ \ \ \ *\ @brief:\ attach\ an\ EnergyCard\ to\ a\ PokemonCard}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00061}00061\ \textcolor{comment}{\ \ \ \ \ *\ @details:\ if\ the\ pokemonIndex\ and\ energyIndex\ are\ valid,\ attach\ the\ EnergyCard\ at\ the\ given\ index\ to\ the\ PokemonCard\ at\ the\ given\ index}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00062}00062\ \textcolor{comment}{\ \ \ \ \ *\ @param:\ \`{}pokemonIndex`:\ index\ of\ the\ PokemonCard\ to\ attach\ the\ EnergyCard\ to}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00063}00063\ \textcolor{comment}{\ \ \ \ \ *\ @param:\ \`{}energyIndex`:\ index\ of\ the\ EnergyCard\ to\ attach\ to\ the\ PokemonCard}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00064}00064\ \textcolor{comment}{\ \ \ \ \ *\ @return:\ none}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00065}00065\ \textcolor{comment}{\ \ \ \ \ */}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00066}00066\ }
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00067}00067\ \ \ \ \ \textcolor{keywordflow}{if}(pokemonIndex\ <\ actionCards.size()\ \&\&\ energyIndex\ <\ benchCards.size())\ \{}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_pokemon_card}{PokemonCard}}*\ pokemonCard\ =\ \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{class_pokemon_card}{PokemonCard}}*\textcolor{keyword}{>}(actionCards[pokemonIndex]);}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_energy_card}{EnergyCard}}*\ energyCard\ =\ \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{class_energy_card}{EnergyCard}}*\textcolor{keyword}{>}(benchCards[energyIndex]);}
@@ -81,16 +60,6 @@
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00078}00078\ \}}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00079}00079\ }
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00080}\mbox{\hyperlink{class_player_aa0427fd3208c2aac42f7eaf8962f9331}{00080}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_aa0427fd3208c2aac42f7eaf8962f9331}{Player::attack}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{size\_t}\ attackerIndex,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{size\_t}\ attackIndex,\ \mbox{\hyperlink{class_player}{Player}}\ \&opponent,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{size\_t}\ enemyPokemonIndex)\ \{}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00081}00081\ \ \ \ \ \textcolor{comment}{/*}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00082}00082\ \textcolor{comment}{\ \ \ \ \ *\ @brief:\ attack\ an\ opponent's\ PokemonCard}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00083}00083\ \textcolor{comment}{\ \ \ \ \ *\ @details:\ if\ the\ attackerIndex,\ attackIndex\ and\ enemyPokemonIndex\ are\ valid,\ attack\ the\ opponent's\ PokemonCard\ at\ the\ given\ index\ with\ the\ PokemonCard\ at\ the\ given\ index.\ If\ the\ opponent's\ PokemonCard\ is\ eliminated,\ remove\ it\ from\ the\ opponent's\ actionCards\ vector}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00084}00084\ \textcolor{comment}{\ \ \ \ \ *\ @param:\ \`{}attackerIndex`:\ index\ of\ the\ PokemonCard\ to\ attack\ with}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00085}00085\ \textcolor{comment}{\ \ \ \ \ *\ @param:\ \`{}attackIndex`:\ index\ of\ the\ attack\ to\ use}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00086}00086\ \textcolor{comment}{\ \ \ \ \ *\ @param:\ \`{}opponent`:\ reference\ to\ the\ opponent}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00087}00087\ \textcolor{comment}{\ \ \ \ \ *\ @param:\ \`{}enemyPokemonIndex`:\ index\ of\ the\ PokemonCard\ to\ attack}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00088}00088\ \textcolor{comment}{\ \ \ \ \ *\ @return:\ none}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00089}00089\ \textcolor{comment}{\ \ \ \ \ *}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00090}00090\ \textcolor{comment}{\ \ \ \ \ */}}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00091}00091\ \ \ \ \ \textcolor{keywordflow}{if}\ (attackerIndex\ <\ actionCards.size()\ \&\&\ enemyPokemonIndex\ <\ opponent.actionCards.size())\ \{}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00092}00092\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_pokemon_card}{PokemonCard}}*\ attacker\ =\ \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{class_pokemon_card}{PokemonCard}}*\textcolor{keyword}{>}(actionCards[attackerIndex]);}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00093}00093\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_pokemon_card}{PokemonCard}}*\ enemyPokemon\ =\ \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{class_pokemon_card}{PokemonCard}}*\textcolor{keyword}{>}(opponent.actionCards[enemyPokemonIndex]);}
@@ -138,12 +107,6 @@
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00135}00135\ \}}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00136}00136\ }
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00137}\mbox{\hyperlink{class_player_aee3c5c983a7e4ce579719508adbf9e55}{00137}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_aee3c5c983a7e4ce579719508adbf9e55}{Player::useTrainer}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{size\_t}\ trainerIndex)\ \{}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00138}00138\ \ \ \ \ \textcolor{comment}{/*}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00139}00139\ \textcolor{comment}{\ \ \ \ \ *\ @brief:\ use\ a\ TrainerCard}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00140}00140\ \textcolor{comment}{\ \ \ \ \ *\ @details:\ if\ the\ trainerIndex\ is\ valid,\ use\ the\ TrainerCard\ at\ the\ given\ index.\ Since\ the\ only\ one\ trainerEffect\ is\ "{}heal\ all\ your\ Pokemon"{},\ set\ the\ HP\ of\ all\ the\ PokemonCards\ in\ the\ actionCards\ vector\ to\ their\ max\ HP}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00141}00141\ \textcolor{comment}{\ \ \ \ \ *\ @param:\ \`{}trainerIndex`:\ index\ of\ the\ TrainerCard\ to\ use}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00142}00142\ \textcolor{comment}{\ \ \ \ \ *\ @return:\ none}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00143}00143\ \textcolor{comment}{\ \ \ \ \ */}}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00144}00144\ \ \ \ \ \textcolor{keywordflow}{if}\ (trainerIndex\ <\ trainerCards.size())\ \{}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00145}00145\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_trainer_card}{TrainerCard}}*\ trainerCard\ =\ trainerCards[trainerIndex];}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00146}00146\ \ \ \ \ \ \ \ \ cout\ <<\ endl\ <<\ playerName\ <<\ \textcolor{stringliteral}{"{}\ is\ using\ the\ Trainer\ Card\ to\ "{}}\ <<\ \textcolor{charliteral}{'"{}'}\ <<\ trainerCard-\/>\mbox{\hyperlink{class_trainer_card_af5010892a29f7650f1bf8bd45569156b}{getTrainerEffect}}()\ <<\ \textcolor{charliteral}{'"{}'};}
@@ -157,12 +120,6 @@
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00154}00154\ \}}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00155}00155\ }
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00156}\mbox{\hyperlink{class_player_abafb04413e27f186575e6147db8e71a4}{00156}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_abafb04413e27f186575e6147db8e71a4}{Player::displayBench}}()\textcolor{keyword}{\ const\ }\{}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00157}00157\ \ \ \ \ \textcolor{comment}{/*}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00158}00158\ \textcolor{comment}{\ \ \ \ \ *\ @brief:\ display\ the\ bench}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00159}00159\ \textcolor{comment}{\ \ \ \ \ *\ @details:\ display\ the\ benchCards\ vector}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00160}00160\ \textcolor{comment}{\ \ \ \ \ *\ @param:\ none}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00161}00161\ \textcolor{comment}{\ \ \ \ \ *\ @return:\ none}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00162}00162\ \textcolor{comment}{\ \ \ \ \ */}}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00163}00163\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ i\ =\ 0;}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00164}00164\ \ \ \ \ cout\ <<\ endl\ <<\ \textcolor{stringliteral}{"{}Bench\ cards\ for\ Player\ "{}}\ <<\ playerName\ <<\ \textcolor{stringliteral}{"{}\ :"{}}\ ;}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00165}00165\ \ \ \ \ \textcolor{keywordflow}{for}(\mbox{\hyperlink{class_trainer_card}{TrainerCard}}\ *trainerCard\ :\ trainerCards)\{}
@@ -176,12 +133,6 @@
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00173}00173\ \}}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00174}00174\ }
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00175}\mbox{\hyperlink{class_player_a95b78658e0728249e318c98a2188cc87}{00175}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a95b78658e0728249e318c98a2188cc87}{Player::displayAction}}()\textcolor{keyword}{\ const\ }\{}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00176}00176\ \ \ \ \ \textcolor{comment}{/*}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00177}00177\ \textcolor{comment}{\ \ \ \ \ *\ @brief:\ display\ the\ action\ cards}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00178}00178\ \textcolor{comment}{\ \ \ \ \ *\ @details:\ display\ the\ actionCards\ vector}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00179}00179\ \textcolor{comment}{\ \ \ \ \ *\ @param:\ none}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00180}00180\ \textcolor{comment}{\ \ \ \ \ *\ @return:\ none}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00181}00181\ \textcolor{comment}{\ \ \ \ \ */}}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00182}00182\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ j\ =\ 0;}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00183}00183\ \ \ \ \ cout\ <<\ endl\ <<\ \textcolor{stringliteral}{"{}Attacks:"{}};}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00184}00184\ \ \ \ \ \textcolor{keywordflow}{for}(\mbox{\hyperlink{class_pokemon_card}{PokemonCard}}\ *pokemonCard\ :\ actionCards)\{}
@@ -196,12 +147,6 @@
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00193}00193\ \}}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00194}00194\ }
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00195}\mbox{\hyperlink{class_player_a82917017543c1a20d50edec9e65eec42}{00195}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_player_a82917017543c1a20d50edec9e65eec42}{Player::displayInfo}}()\textcolor{keyword}{\ const\ }\{}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00196}00196\ \ \ \ \ \textcolor{comment}{/*}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00197}00197\ \textcolor{comment}{\ \ \ \ \ *\ @brief:\ display\ the\ player's\ name\ and\ all\ the\ cards}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00198}00198\ \textcolor{comment}{\ \ \ \ \ *\ @details:\ display\ the\ playerName,\ the\ benchCards\ vector\ and\ the\ actionCards\ vector}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00199}00199\ \textcolor{comment}{\ \ \ \ \ *\ @param:\ none}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00200}00200\ \textcolor{comment}{\ \ \ \ \ *\ @return:\ none}}
-\DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00201}00201\ \textcolor{comment}{\ \ \ \ \ */}}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00202}00202\ \ \ \ \ cout\ <<\ endl\ <<\ \textcolor{stringliteral}{"{}Player:\ "{}}\ <<\ playerName\ <<\ endl;}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00203}00203\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Bench\ cards:\ "{}}\ <<\ endl;}
 \DoxyCodeLine{\Hypertarget{_player_8cpp_source_l00204}00204\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ card\ :\ benchCards)\ \{}

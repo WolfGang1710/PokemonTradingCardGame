@@ -16,7 +16,7 @@ maxHP(_maxHP),
 hp(_maxHP),
 actualCost(0)
 {
-    /*
+    /**
      * @brief Constructor of PokemonCard
      * @details Constructor of PokemonCard, it initializes the attributes of the PokemonCard :
      * - active : false
@@ -45,7 +45,7 @@ actualCost(0)
 }
 
 void PokemonCard::activate() {
-    /*
+    /**
      * @brief: Activates the PokemonCard
      * @details: Activates the PokemonCard, if it is not already active (default state)
      * @return: None
@@ -58,7 +58,7 @@ void PokemonCard::activate() {
 }
 
 void PokemonCard::incrementActualCost() {
-    /*
+    /**
      * @brief: Increments the actual cost of the PokemonCard by one
      * @return: None
      */
@@ -66,7 +66,7 @@ void PokemonCard::incrementActualCost() {
 }
 
 void PokemonCard::receiveDamage(const int damage) {
-    /*
+    /**
      * @brief: Receives damage
      * @details: Receives damage, set dead to true if the PokemonCard's hp is less than or equal to 0
      * @param: `damage`: int
@@ -79,7 +79,7 @@ void PokemonCard::receiveDamage(const int damage) {
 }
 
 bool PokemonCard::ableToAttack(const int cost) const {
-    /*
+    /**
      * @brief: Checks if the PokemonCard is able to attack
      * @details: Checks if the PokemonCard is able to attack, if it is active, not dead and if the cost is less than or equal to the actual cost
      * @param: `cost`: int
@@ -90,7 +90,7 @@ bool PokemonCard::ableToAttack(const int cost) const {
 }
 
 const string &PokemonCard::getPokemonType() const {
-    /*
+    /**
      * @brief: Returns the Pokémon type of the PokemonCard
      * @return: pokemonType: string
      */
@@ -98,7 +98,7 @@ const string &PokemonCard::getPokemonType() const {
 }
 
 const string &PokemonCard::getFamilyType() const {
-    /*
+    /**
      * @brief: Returns the family type of the PokemonCard
      * @return: familyType: string
      */
@@ -106,7 +106,7 @@ const string &PokemonCard::getFamilyType() const {
 }
 
 int PokemonCard::getEvolutionLevel() const {
-    /*
+    /**
      * @brief: Returns the evolution level of the PokemonCard
      * @return: evolutionLevel: int
      */
@@ -114,7 +114,7 @@ int PokemonCard::getEvolutionLevel() const {
 }
 
 int PokemonCard::getHP() const {
-    /*
+    /**
      * @brief: Returns the HP of the PokemonCard
      * @return: hp: int
      */
@@ -122,7 +122,7 @@ int PokemonCard::getHP() const {
 }
 
 const vector<tuple<int, int, string, int>> &PokemonCard::getAttacks() const {
-    /*
+    /**
      * @brief: Returns the attacks of the PokemonCard
      * @return: attacks: vector<tuple<int, int, string, int>>
      */
@@ -130,7 +130,7 @@ const vector<tuple<int, int, string, int>> &PokemonCard::getAttacks() const {
 }
 
 const tuple<int, int, string, int> &PokemonCard::getAttack(const size_t attackIndex) const {
-    /*
+    /**
      * @brief: Returns the attack at the given index
      * @param: `attackIndex`: size_t
      * @return: attack: tuple<int, int, string, int>
@@ -143,7 +143,7 @@ const tuple<int, int, string, int> &PokemonCard::getAttack(const size_t attackIn
 }
 
 size_t PokemonCard::getNumberOfAttacks() const {
-    /*
+    /**
      * @brief: Returns the number of attacks of the PokemonCard
      * @return: attacks.size(): size_t
      */
@@ -151,7 +151,7 @@ size_t PokemonCard::getNumberOfAttacks() const {
 }
 
 int PokemonCard::getMaxHp() const {
-    /*
+    /**
      * @brief: Returns the max HP of the PokemonCard
      * @return: maxHP: int
      */
@@ -159,7 +159,7 @@ int PokemonCard::getMaxHp() const {
 }
 
 int PokemonCard::getActualCost() const {
-    /*
+    /**
      * @brief: Returns the actual cost of the PokemonCard
      * @return: actualCost: int
      * @warning: Not used yet
@@ -168,7 +168,7 @@ int PokemonCard::getActualCost() const {
 }
 
 bool PokemonCard::isActive() const {
-    /*
+    /**
      * @brief: Returns the active state of the PokemonCard
      * @return: active: bool
      * @warning: Not used yet
@@ -177,7 +177,7 @@ bool PokemonCard::isActive() const {
 }
 
 bool PokemonCard::isDead() const {
-    /*
+    /**
      * @brief: Returns the dead state of the PokemonCard
      * @return: dead: bool
      * @warning: Not used yet
@@ -186,11 +186,11 @@ bool PokemonCard::isDead() const {
 }
 
 void PokemonCard::displayInfo() const {
-    /*
+    /**
      * @brief: Displays the information of the PokemonCard
      * @details: Displays the information of the PokemonCard :
-     * - Pokemon name
-     * - Pokemon type
+     * - Pokémon name
+     * - Pokémon type
      * - Family type
      * - Evolution level
      * - max HP
@@ -221,7 +221,7 @@ void PokemonCard::displayInfo() const {
 }
 
 void PokemonCard::setHp(int _hp) {
-    /*
+    /**
      * @brief: Sets the HP of the PokemonCard
      * @details: Sets the HP of the PokemonCard, used by the TrainerCard
      * @param: _hp: int

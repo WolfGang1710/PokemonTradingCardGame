@@ -8,9 +8,8 @@ var searchData=
   ['getevolutionlevel_5',['getEvolutionLevel',['../class_pokemon_card.html#a3dea8e4867084f29fb0c337d73753c7c',1,'PokemonCard']]],
   ['getfamilytype_6',['getFamilyType',['../class_pokemon_card.html#a10f8284d3120da9c9f5f13bde793c3cb',1,'PokemonCard']]],
   ['gethp_7',['getHP',['../class_pokemon_card.html#a7c45994fa9bdbbfce7cef8020f6c146d',1,'PokemonCard']]],
-  ['gethp_8',['getHp',['../class_pokemon_card.html#a565b43603971cb45ad38fb93f5e6aed9',1,'PokemonCard']]],
-  ['getmaxhp_9',['getMaxHp',['../class_pokemon_card.html#ad1c3977508f68217c70365b64956e07b',1,'PokemonCard']]],
-  ['getnumberofattacks_10',['getNumberOfAttacks',['../class_pokemon_card.html#ac0de04605fd400519441fc2c993c0a87',1,'PokemonCard']]],
-  ['getpokemontype_11',['getPokemonType',['../class_pokemon_card.html#a95a5dbec5789265b3da1d4a7f95ffb6b',1,'PokemonCard']]],
-  ['gettrainereffect_12',['getTrainerEffect',['../class_trainer_card.html#af5010892a29f7650f1bf8bd45569156b',1,'TrainerCard']]]
+  ['getmaxhp_8',['getMaxHp',['../class_pokemon_card.html#ad1c3977508f68217c70365b64956e07b',1,'PokemonCard']]],
+  ['getnumberofattacks_9',['getNumberOfAttacks',['../class_pokemon_card.html#ac0de04605fd400519441fc2c993c0a87',1,'PokemonCard']]],
+  ['getpokemontype_10',['getPokemonType',['../class_pokemon_card.html#a95a5dbec5789265b3da1d4a7f95ffb6b',1,'PokemonCard']]],
+  ['gettrainereffect_11',['getTrainerEffect',['../class_trainer_card.html#af5010892a29f7650f1bf8bd45569156b',1,'TrainerCard']]]
 ];

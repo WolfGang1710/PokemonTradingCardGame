@@ -5,4 +5,57 @@
 \begin{quote}
 Un jeu de cartes Pokemon en C++. ROGUET William 2e année Informatique \& Réseaux à l\textquotesingle{}ENSISA. \end{quote}
 \hypertarget{md__c_1_2_users_2ecole_2_one_drive_01-_01uha_8fr_2_documents_2_dev_2_c_09_09_2_pokemon_trading_card_game_2_r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{Choix d\textquotesingle{}implémentation}{Choix d\textquotesingle{}implémentation}}\label{md__c_1_2_users_2ecole_2_one_drive_01-_01uha_8fr_2_documents_2_dev_2_c_09_09_2_pokemon_trading_card_game_2_r_e_a_d_m_e_autotoc_md1}
-La partie la plus complexe a été de créer les attaques des pokémons. Pour une compréhension plus simple du code, j\textquotesingle{}ai fait le choix de créer une classe {\ttfamily \doxylink{struct_attacks}{Attacks}} qui n\textquotesingle{}est rien d\textquotesingle{}autre qu\textquotesingle{}un vecteur d\textquotesingle{}attack. Chaque attack est une structure contenant les quatre informations demandées dans le sujet, un 4-\/uplet. 
+J\textquotesingle{}avais tout d\textquotesingle{}abord fait le choix d\textquotesingle{}implémenter les attaques des pokémons en passant par une structure, par souci de lecture et de compréhension du code. J\textquotesingle{}ai finalement décidé de passer les données de manières brutes, sans passer par une structure.\hypertarget{md__c_1_2_users_2ecole_2_one_drive_01-_01uha_8fr_2_documents_2_dev_2_c_09_09_2_pokemon_trading_card_game_2_r_e_a_d_m_e_autotoc_md2}{}\doxysection{\texorpdfstring{Problèmes}{Problèmes}}\label{md__c_1_2_users_2ecole_2_one_drive_01-_01uha_8fr_2_documents_2_dev_2_c_09_09_2_pokemon_trading_card_game_2_r_e_a_d_m_e_autotoc_md2}
+
+\begin{DoxyEnumerate}
+\item Lors de l\textquotesingle{}utilisation de {\ttfamily display\+Action}, je constate que actual\+Cost augmente à chaque itération dans la boucle {\ttfamily for}.
+\item Lors de l\textquotesingle{}utilisation de {\ttfamily display\+Action}, je constate que les actual\+Costs de Bulbizarre sont les mêmes que ceux de Pikachu.
+\item Lors de la compilation, j\textquotesingle{}obtiens une fois une erreur {\ttfamily Invalid card index} qui apparait soit au touu début soit au milieu du script.
+\end{DoxyEnumerate}\hypertarget{md__c_1_2_users_2ecole_2_one_drive_01-_01uha_8fr_2_documents_2_dev_2_c_09_09_2_pokemon_trading_card_game_2_r_e_a_d_m_e_autotoc_md3}{}\doxysection{\texorpdfstring{Structure du projet}{Structure du projet}}\label{md__c_1_2_users_2ecole_2_one_drive_01-_01uha_8fr_2_documents_2_dev_2_c_09_09_2_pokemon_trading_card_game_2_r_e_a_d_m_e_autotoc_md3}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{PokemonTradingCardGame}
+\DoxyCodeLine{|.gitignore}
+\DoxyCodeLine{|\ \ \ Card.cpp}
+\DoxyCodeLine{|\ \ \ CMakeLists.txt}
+\DoxyCodeLine{|\ \ \ EnergyCard.cpp}
+\DoxyCodeLine{|\ \ \ logo.png}
+\DoxyCodeLine{|\ \ \ main.cpp}
+\DoxyCodeLine{|\ \ \ Player.cpp}
+\DoxyCodeLine{|\ \ \ PokemonCard.cpp}
+\DoxyCodeLine{|\ \ \ README.md}
+\DoxyCodeLine{|\ \ \ TrainerCard.cpp}
+\DoxyCodeLine{|\ \ \ tree.txt}
+\DoxyCodeLine{|\ \ \ }
+\DoxyCodeLine{|\ \ \ \ \ \ \ }
+\DoxyCodeLine{+-\/-\/-\/Doxygen\ \#\ Documentation}
+\DoxyCodeLine{|}
+\DoxyCodeLine{|\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\(\backslash\)-\/-\/-\/headers}
+\DoxyCodeLine{\ \ \ \ Card.h}
+\DoxyCodeLine{\ \ \ \ EnergyCard.h}
+\DoxyCodeLine{\ \ \ \ Player.h}
+\DoxyCodeLine{\ \ \ \ PokemonCard.h}
+\DoxyCodeLine{\ \ \ \ TrainerCard.h}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2ecole_2_one_drive_01-_01uha_8fr_2_documents_2_dev_2_c_09_09_2_pokemon_trading_card_game_2_r_e_a_d_m_e_autotoc_md4}{}\doxysection{\texorpdfstring{TODO}{TODO}}\label{md__c_1_2_users_2ecole_2_one_drive_01-_01uha_8fr_2_documents_2_dev_2_c_09_09_2_pokemon_trading_card_game_2_r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyItemize}
+\item \mbox{[}x\mbox{]} Créer les classes de cartes
+\item \mbox{[}x\mbox{]} Créer les classes de cartes \doxylink{class_energy_card}{Energy\+Card}
+\item \mbox{[}x\mbox{]} Créer les classes de cartes \doxylink{class_pokemon_card}{Pokemon\+Card}
+\item \mbox{[}x\mbox{]} Créer les classes de cartes \doxylink{class_trainer_card}{Trainer\+Card}
+\item \mbox{[}x\mbox{]} Créer les classes de cartes \doxylink{class_player}{Player}
+\item \mbox{[} \mbox{]} Fixer les problèmes des actual\+Cost
+\item \mbox{[} \mbox{]} Implémenter la limitation à deux attaques (actuellement, pas de limite)
+\end{DoxyItemize}\hypertarget{md__c_1_2_users_2ecole_2_one_drive_01-_01uha_8fr_2_documents_2_dev_2_c_09_09_2_pokemon_trading_card_game_2_r_e_a_d_m_e_autotoc_md5}{}\doxysection{\texorpdfstring{Sources}{Sources}}\label{md__c_1_2_users_2ecole_2_one_drive_01-_01uha_8fr_2_documents_2_dev_2_c_09_09_2_pokemon_trading_card_game_2_r_e_a_d_m_e_autotoc_md5}
+
+\begin{DoxyItemize}
+\item \href{https://en.cppreference.com/w/cpp/container/vector/push_back}{\texttt{ push\+\_\+back}}
+\item \href{https://en.cppreference.com/w/cpp/container/vector/emplace_back}{\texttt{ emplace\+\_\+back}}
+\item \href{https://zestedesavoir.com/tutoriels/822/la-programmation-en-c-moderne/etre-un-developpeur/mais-ou-est-la-doc/}{\texttt{ Zeste\+De\+Savoir -\/ Mais où est passé la doc}}
+\item \href{https://cplusplus.com/reference/vector/vector/get_allocator/}{\texttt{ get\+\_\+allocator}}
+\item \href{https://www.onlinegdb.com/online_c++_compiler}{\texttt{ Compilateur C++ online pour tester}}
+\item 
+\end{DoxyItemize}

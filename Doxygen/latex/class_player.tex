@@ -66,6 +66,18 @@ Definition at line \mbox{\hyperlink{_player_8cpp_source_l00015}{15}} of file \mb
 \doxysubsubsection{\texorpdfstring{activatePokemonCard()}{activatePokemonCard()}}
 {\footnotesize\ttfamily void Player\+::activate\+Pokemon\+Card (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{card\+Index }\end{DoxyParamCaption})}
 
+\+: activate a \doxylink{class_pokemon_card}{Pokemon\+Card}
+
+\+: if the card\+Index is valid, activate the \doxylink{class_pokemon_card}{Pokemon\+Card} at the given index 
+\begin{DoxyParams}{Parameters}
+{\em } & {\ttfamily card\+Index}\+: index of the \doxylink{class_pokemon_card}{Pokemon\+Card} to activate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: none 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000001}{Bug}}]\+: When running the program, the error is raised, but not at the same place, but the program continues to run. \end{DoxyRefDesc}
 
 
 Definition at line \mbox{\hyperlink{_player_8cpp_source_l00040}{40}} of file \mbox{\hyperlink{_player_8cpp_source}{Player.\+cpp}}.
@@ -76,6 +88,16 @@ Definition at line \mbox{\hyperlink{_player_8cpp_source_l00040}{40}} of file \mb
 \doxysubsubsection{\texorpdfstring{addCardToBench()}{addCardToBench()}}
 {\footnotesize\ttfamily void Player\+::add\+Card\+To\+Bench (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}} \texorpdfstring{$\ast$}{*}}]{card }\end{DoxyParamCaption})}
 
+\+: add a card to the bench
+
+\+: if it is a \doxylink{class_pokemon_card}{Pokemon\+Card}, add it to the action\+Cards vector, if it is a \doxylink{class_trainer_card}{Trainer\+Card}, add it to the trainer\+Cards vector, otherwise add it to the bench\+Cards vector 
+\begin{DoxyParams}{Parameters}
+{\em } & {\ttfamily card}\+: pointer to the card to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: none
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_player_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{_player_8cpp_source}{Player.\+cpp}}.
@@ -86,6 +108,18 @@ Definition at line \mbox{\hyperlink{_player_8cpp_source_l00024}{24}} of file \mb
 \doxysubsubsection{\texorpdfstring{attachEnergyCard()}{attachEnergyCard()}}
 {\footnotesize\ttfamily void Player\+::attach\+Energy\+Card (\begin{DoxyParamCaption}\item[{size\+\_\+t const}]{pokemon\+Index,  }\item[{size\+\_\+t const}]{energy\+Index }\end{DoxyParamCaption})}
 
+\+: attach an \doxylink{class_energy_card}{Energy\+Card} to a \doxylink{class_pokemon_card}{Pokemon\+Card}
+
+\+: if the pokemon\+Index and energy\+Index are valid, attach the \doxylink{class_energy_card}{Energy\+Card} at the given index to the \doxylink{class_pokemon_card}{Pokemon\+Card} at the given index 
+\begin{DoxyParams}{Parameters}
+{\em } & {\ttfamily pokemon\+Index}\+: index of the \doxylink{class_pokemon_card}{Pokemon\+Card} to attach the \doxylink{class_energy_card}{Energy\+Card} to \\
+\hline
+{\em } & {\ttfamily energy\+Index}\+: index of the \doxylink{class_energy_card}{Energy\+Card} to attach to the \doxylink{class_pokemon_card}{Pokemon\+Card} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: none
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_player_8cpp_source_l00058}{58}} of file \mbox{\hyperlink{_player_8cpp_source}{Player.\+cpp}}.
@@ -96,6 +130,22 @@ Definition at line \mbox{\hyperlink{_player_8cpp_source_l00058}{58}} of file \mb
 \doxysubsubsection{\texorpdfstring{attack()}{attack()}}
 {\footnotesize\ttfamily void Player\+::attack (\begin{DoxyParamCaption}\item[{size\+\_\+t const}]{pokemon\+Index,  }\item[{size\+\_\+t const}]{attack\+Index,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{player,  }\item[{size\+\_\+t const}]{enemy\+Pokemon\+Index }\end{DoxyParamCaption})}
 
+\+: attack an opponent\textquotesingle{}s \doxylink{class_pokemon_card}{Pokemon\+Card}
+
+\+: if the attacker\+Index, attack\+Index and enemy\+Pokemon\+Index are valid, attack the opponent\textquotesingle{}s \doxylink{class_pokemon_card}{Pokemon\+Card} at the given index with the \doxylink{class_pokemon_card}{Pokemon\+Card} at the given index. If the opponent\textquotesingle{}s \doxylink{class_pokemon_card}{Pokemon\+Card} is eliminated, remove it from the opponent\textquotesingle{}s action\+Cards vector 
+\begin{DoxyParams}{Parameters}
+{\em } & {\ttfamily attacker\+Index}\+: index of the \doxylink{class_pokemon_card}{Pokemon\+Card} to attack with \\
+\hline
+{\em } & {\ttfamily attack\+Index}\+: index of the attack to use \\
+\hline
+{\em } & {\ttfamily opponent}\+: reference to the opponent \\
+\hline
+{\em } & {\ttfamily enemy\+Pokemon\+Index}\+: index of the \doxylink{class_pokemon_card}{Pokemon\+Card} to attack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: none
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_player_8cpp_source_l00080}{80}} of file \mbox{\hyperlink{_player_8cpp_source}{Player.\+cpp}}.
@@ -106,6 +156,16 @@ Definition at line \mbox{\hyperlink{_player_8cpp_source_l00080}{80}} of file \mb
 \doxysubsubsection{\texorpdfstring{displayAction()}{displayAction()}}
 {\footnotesize\ttfamily void Player\+::display\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\+: display the action cards
+
+\+: display the action\+Cards vector 
+\begin{DoxyParams}{Parameters}
+{\em } & none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: none
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_player_8cpp_source_l00175}{175}} of file \mbox{\hyperlink{_player_8cpp_source}{Player.\+cpp}}.
@@ -116,6 +176,16 @@ Definition at line \mbox{\hyperlink{_player_8cpp_source_l00175}{175}} of file \m
 \doxysubsubsection{\texorpdfstring{displayBench()}{displayBench()}}
 {\footnotesize\ttfamily void Player\+::display\+Bench (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\+: display the bench
+
+\+: display the bench\+Cards vector 
+\begin{DoxyParams}{Parameters}
+{\em } & none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: none
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_player_8cpp_source_l00156}{156}} of file \mbox{\hyperlink{_player_8cpp_source}{Player.\+cpp}}.
@@ -126,6 +196,16 @@ Definition at line \mbox{\hyperlink{_player_8cpp_source_l00156}{156}} of file \m
 \doxysubsubsection{\texorpdfstring{displayInfo()}{displayInfo()}}
 {\footnotesize\ttfamily void Player\+::display\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\+: display the player\textquotesingle{}s name and all the cards
+
+\+: display the player\+Name, the bench\+Cards vector and the action\+Cards vector 
+\begin{DoxyParams}{Parameters}
+{\em } & none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: none
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_player_8cpp_source_l00195}{195}} of file \mbox{\hyperlink{_player_8cpp_source}{Player.\+cpp}}.
@@ -136,6 +216,16 @@ Definition at line \mbox{\hyperlink{_player_8cpp_source_l00195}{195}} of file \m
 \doxysubsubsection{\texorpdfstring{useTrainer()}{useTrainer()}}
 {\footnotesize\ttfamily void Player\+::use\+Trainer (\begin{DoxyParamCaption}\item[{size\+\_\+t const}]{trainer\+Index }\end{DoxyParamCaption})}
 
+\+: use a \doxylink{class_trainer_card}{Trainer\+Card}
+
+\+: if the trainer\+Index is valid, use the \doxylink{class_trainer_card}{Trainer\+Card} at the given index. Since the only one trainer\+Effect is "{}heal all your Pokemon"{}, set the HP of all the Pokemon\+Cards in the action\+Cards vector to their max HP 
+\begin{DoxyParams}{Parameters}
+{\em } & {\ttfamily trainer\+Index}\+: index of the \doxylink{class_trainer_card}{Trainer\+Card} to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: none
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_player_8cpp_source_l00137}{137}} of file \mbox{\hyperlink{_player_8cpp_source}{Player.\+cpp}}.
@@ -144,5 +234,5 @@ Definition at line \mbox{\hyperlink{_player_8cpp_source_l00137}{137}} of file \m
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-headers/\mbox{\hyperlink{_player_8h}{Player.\+h}}\item 
-\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/ecole/\+One\+Drive -\/ uha.\+fr/\+Documents/\+Dev/\+C++/\+Pokemon\+Trading\+Card\+Game/headers/\mbox{\hyperlink{_player_8h}{Player.\+h}}\item 
+C\+:/\+Users/ecole/\+One\+Drive -\/ uha.\+fr/\+Documents/\+Dev/\+C++/\+Pokemon\+Trading\+Card\+Game/\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

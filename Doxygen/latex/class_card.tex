@@ -14,7 +14,7 @@ Inheritance diagram for Card\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_card_afccccdc2f928eb472b9d9f3ea352a572}{Card}} (const string \&\mbox{\hyperlink{class_card_a83f3a0ac457214d2c1fb59511ecf8e0a}{card\+Name}})
-\item 
+\begin{DoxyCompactList}\small\item\em \+: Constructor for the card object \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_card_a24d9140b69cd7fcc6b4787350fdeb5e9}{\texorpdfstring{$\sim$}{\string~}\+Card}} ()=default
 \item 
 virtual void \mbox{\hyperlink{class_card_a6aaed5bcdbd1dc28a3d07c1eff290589}{display\+Info}} () const =0
@@ -40,8 +40,20 @@ Definition at line \mbox{\hyperlink{_card_8h_source_l00011}{11}} of file \mbox{\
 \index{Card@{Card}!Card@{Card}}
 \index{Card@{Card}!Card@{Card}}
 \doxysubsubsection{\texorpdfstring{Card()}{Card()}}
-{\footnotesize\ttfamily Card\+::\+Card (\begin{DoxyParamCaption}\item[{const string \&}]{card\+Name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Card\+::\+Card (\begin{DoxyParamCaption}\item[{const string \&}]{\+\_\+card\+Name }\end{DoxyParamCaption})}
 
+
+
+\+: Constructor for the card object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \`{}\+\_\+card\+Name\`{}} & the name of the card \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: none 
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_card_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{_card_8cpp_source}{Card.\+cpp}}.
@@ -61,13 +73,21 @@ Definition at line \mbox{\hyperlink{_card_8cpp_source_l00010}{10}} of file \mbox
 \doxysubsubsection{\texorpdfstring{displayInfo()}{displayInfo()}}
 {\footnotesize\ttfamily void Card\+::display\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+\+: Display the card\textquotesingle{}s name 
+\begin{DoxyParams}{Parameters}
+{\em } & none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: none
+\end{DoxyReturn}
 
 
 Implemented in \mbox{\hyperlink{class_energy_card_ad7cf9208f6936637428e44308cf38448}{Energy\+Card}}, \mbox{\hyperlink{class_pokemon_card_a8a32ee4acd511eadab90f1c0dd94bac5}{Pokemon\+Card}}, and \mbox{\hyperlink{class_trainer_card_a28e1cd498d9f08f17ac7b9d24bfe3bdf}{Trainer\+Card}}.
 
 
 
-Definition at line \mbox{\hyperlink{_card_8cpp_source_l00019}{19}} of file \mbox{\hyperlink{_card_8cpp_source}{Card.\+cpp}}.
+Definition at line \mbox{\hyperlink{_card_8cpp_source_l00020}{20}} of file \mbox{\hyperlink{_card_8cpp_source}{Card.\+cpp}}.
 
 \Hypertarget{class_card_a84138a1fdba1e2a270cc9e876d327840}\label{class_card_a84138a1fdba1e2a270cc9e876d327840} 
 \index{Card@{Card}!getCardName@{getCardName}}
@@ -75,9 +95,17 @@ Definition at line \mbox{\hyperlink{_card_8cpp_source_l00019}{19}} of file \mbox
 \doxysubsubsection{\texorpdfstring{getCardName()}{getCardName()}}
 {\footnotesize\ttfamily const string \& Card\+::get\+Card\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\+: Get the card\textquotesingle{}s name 
+\begin{DoxyParams}{Parameters}
+{\em } & none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: the card\textquotesingle{}s name
+\end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{_card_8cpp_source_l00027}{27}} of file \mbox{\hyperlink{_card_8cpp_source}{Card.\+cpp}}.
+Definition at line \mbox{\hyperlink{_card_8cpp_source_l00029}{29}} of file \mbox{\hyperlink{_card_8cpp_source}{Card.\+cpp}}.
 
 
 
@@ -96,5 +124,5 @@ Definition at line \mbox{\hyperlink{_card_8h_source_l00013}{13}} of file \mbox{\
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-headers/\mbox{\hyperlink{_card_8h}{Card.\+h}}\item 
-\mbox{\hyperlink{_card_8cpp}{Card.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/ecole/\+One\+Drive -\/ uha.\+fr/\+Documents/\+Dev/\+C++/\+Pokemon\+Trading\+Card\+Game/headers/\mbox{\hyperlink{_card_8h}{Card.\+h}}\item 
+C\+:/\+Users/ecole/\+One\+Drive -\/ uha.\+fr/\+Documents/\+Dev/\+C++/\+Pokemon\+Trading\+Card\+Game/\mbox{\hyperlink{_card_8cpp}{Card.\+cpp}}\end{DoxyCompactItemize}

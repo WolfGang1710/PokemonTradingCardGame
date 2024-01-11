@@ -22,7 +22,7 @@ Player::~Player() {
 }
 
 void Player::addCardToBench(Card* card) {
-    /*
+    /**
      * @brief: add a card to the bench
      * @details: if it is a PokemonCard, add it to the actionCards vector, if it is a TrainerCard, add it to the trainerCards vector, otherwise add it to the benchCards vector
      * @param: `card`: pointer to the card to add
@@ -38,7 +38,7 @@ void Player::addCardToBench(Card* card) {
 }
 
 void Player::activatePokemonCard(size_t cardIndex) {
-    /*
+    /**
      * @brief: activate a PokemonCard
      * @details: if the cardIndex is valid, activate the PokemonCard at the given index
      * @param: `cardIndex`: index of the PokemonCard to activate
@@ -56,7 +56,7 @@ void Player::activatePokemonCard(size_t cardIndex) {
 }
 
 void Player::attachEnergyCard(const size_t pokemonIndex, const size_t energyIndex) {
-    /*
+    /**
      * @brief: attach an EnergyCard to a PokemonCard
      * @details: if the pokemonIndex and energyIndex are valid, attach the EnergyCard at the given index to the PokemonCard at the given index
      * @param: `pokemonIndex`: index of the PokemonCard to attach the EnergyCard to
@@ -78,7 +78,7 @@ void Player::attachEnergyCard(const size_t pokemonIndex, const size_t energyInde
 }
 
 void Player::attack(const size_t attackerIndex, const size_t attackIndex, Player &opponent, const size_t enemyPokemonIndex) {
-    /*
+    /**
      * @brief: attack an opponent's PokemonCard
      * @details: if the attackerIndex, attackIndex and enemyPokemonIndex are valid, attack the opponent's PokemonCard at the given index with the PokemonCard at the given index. If the opponent's PokemonCard is eliminated, remove it from the opponent's actionCards vector
      * @param: `attackerIndex`: index of the PokemonCard to attack with
@@ -135,7 +135,7 @@ void Player::attack(const size_t attackerIndex, const size_t attackIndex, Player
 }
 
 void Player::useTrainer(const size_t trainerIndex) {
-    /*
+    /**
      * @brief: use a TrainerCard
      * @details: if the trainerIndex is valid, use the TrainerCard at the given index. Since the only one trainerEffect is "heal all your Pokemon", set the HP of all the PokemonCards in the actionCards vector to their max HP
      * @param: `trainerIndex`: index of the TrainerCard to use
@@ -154,7 +154,7 @@ void Player::useTrainer(const size_t trainerIndex) {
 }
 
 void Player::displayBench() const {
-    /*
+    /**
      * @brief: display the bench
      * @details: display the benchCards vector
      * @param: none
@@ -173,7 +173,7 @@ void Player::displayBench() const {
 }
 
 void Player::displayAction() const {
-    /*
+    /**
      * @brief: display the action cards
      * @details: display the actionCards vector
      * @param: none
@@ -193,7 +193,7 @@ void Player::displayAction() const {
 }
 
 void Player::displayInfo() const {
-    /*
+    /**
      * @brief: display the player's name and all the cards
      * @details: display the playerName, the benchCards vector and the actionCards vector
      * @param: none

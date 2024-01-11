@@ -44,7 +44,6 @@ public:
     const tuple<int, int, string, int> &getAttack(const size_t attackIndex) const;
     size_t getNumberOfAttacks() const ;
     int getMaxHp() const;
-    int getHp() const;
     void setHp(int hp);
     int getActualCost() const;
 

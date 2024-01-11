@@ -6,7 +6,7 @@
 
 EnergyCard::EnergyCard(const string &_energyType):
 Card("Energy"), energyType(_energyType)
-        /*
+        /**
          * @brief: Constructor for EnergyCard
          * @details: Creates an EnergyCard with the given energyType. By default, the name of the card is "Energy" and cannot be changed.
          * @param: `_energyType`: string
@@ -15,7 +15,7 @@ Card("Energy"), energyType(_energyType)
 {}
 
 void EnergyCard::displayInfo() const {
-    /*
+    /**
      * @brief: Displays the information of the EnergyCard
      * @details: Displays the information of the EnergyCard, including the name of the card and the energy type.
      * @param: None
@@ -27,7 +27,7 @@ void EnergyCard::displayInfo() const {
 }
 
 const string &EnergyCard::getEnergyType() const {
-    /*
+    /**
      * @brief: Returns the energy type of the EnergyCard
      * @param: None
      * @return: energyType: string

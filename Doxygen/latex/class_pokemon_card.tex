@@ -41,8 +41,6 @@ size\+\_\+t \mbox{\hyperlink{class_pokemon_card_ac0de04605fd400519441fc2c993c0a8
 \item 
 int \mbox{\hyperlink{class_pokemon_card_ad1c3977508f68217c70365b64956e07b}{get\+Max\+Hp}} () const
 \item 
-int \mbox{\hyperlink{class_pokemon_card_a565b43603971cb45ad38fb93f5e6aed9}{get\+Hp}} () const
-\item 
 void \mbox{\hyperlink{class_pokemon_card_aa47ab388bbf776b7f4380c0c769f5df4}{set\+Hp}} (int hp)
 \item 
 int \mbox{\hyperlink{class_pokemon_card_a1733a646b80f87885df3f78564578c4c}{get\+Actual\+Cost}} () const
@@ -57,7 +55,7 @@ void \mbox{\hyperlink{class_pokemon_card_a8a32ee4acd511eadab90f1c0dd94bac5}{disp
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_card_afccccdc2f928eb472b9d9f3ea352a572}{Card}} (const string \&\mbox{\hyperlink{class_card_a83f3a0ac457214d2c1fb59511ecf8e0a}{card\+Name}})
-\item 
+\begin{DoxyCompactList}\small\item\em \+: Constructor for the card object \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_card_a24d9140b69cd7fcc6b4787350fdeb5e9}{\texorpdfstring{$\sim$}{\string~}\+Card}} ()=default
 \item 
 const string \& \mbox{\hyperlink{class_card_a84138a1fdba1e2a270cc9e876d327840}{get\+Card\+Name}} () const
@@ -84,7 +82,41 @@ Definition at line \mbox{\hyperlink{_pokemon_card_8h_source_l00015}{15}} of file
 \doxysubsubsection{\texorpdfstring{PokemonCard()}{PokemonCard()}}
 {\footnotesize\ttfamily Pokemon\+Card\+::\+Pokemon\+Card (\begin{DoxyParamCaption}\item[{const string \&}]{card\+Name,  }\item[{const string \&}]{pokemon\+Type,  }\item[{const string \&}]{family\+Type,  }\item[{const int}]{evolution\+Level,  }\item[{const int}]{max\+HP,  }\item[{const int}]{cost1,  }\item[{const string \&}]{attack\+Name1,  }\item[{const int}]{damage1,  }\item[{const int}]{cost2,  }\item[{const string \&}]{attack\+Name2,  }\item[{const int}]{damage2 }\end{DoxyParamCaption})}
 
+Constructor of \doxylink{class_pokemon_card}{Pokemon\+Card}
 
+Constructor of \doxylink{class_pokemon_card}{Pokemon\+Card}, it initializes the attributes of the \doxylink{class_pokemon_card}{Pokemon\+Card} \+:
+\begin{DoxyItemize}
+\item active \+: false
+\item actual\+Cost \+: 0 and it creates the attacks of the \doxylink{class_pokemon_card}{Pokemon\+Card} using the emplace\+\_\+back method 
+\begin{DoxyParams}{Parameters}
+{\em } & {\ttfamily \+\_\+card\+Name}\+: string \\
+\hline
+{\em } & {\ttfamily \+\_\+pokemon\+Type}\+: string \\
+\hline
+{\em } & {\ttfamily \+\_\+family\+Type}\+: string \\
+\hline
+{\em } & {\ttfamily \+\_\+evolution\+Level}\+: int \\
+\hline
+{\em } & {\ttfamily \+\_\+max\+HP}\+: int \\
+\hline
+{\em } & {\ttfamily cost1}\+: int \\
+\hline
+{\em } & {\ttfamily attack\+Name1}\+: string \\
+\hline
+{\em } & {\ttfamily damage1}\+: int \\
+\hline
+{\em } & {\ttfamily cost2}\+: int \\
+\hline
+{\em } & {\ttfamily attack\+Name2}\+: string \\
+\hline
+{\em } & {\ttfamily damage2}\+: int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: None
+\end{DoxyReturn}
+
+\end{DoxyItemize}
 
 Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
 
@@ -103,6 +135,19 @@ Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00007}{7}} of fil
 \doxysubsubsection{\texorpdfstring{ableToAttack()}{ableToAttack()}}
 {\footnotesize\ttfamily bool Pokemon\+Card\+::able\+To\+Attack (\begin{DoxyParamCaption}\item[{const int}]{cost }\end{DoxyParamCaption}) const}
 
+\+: Checks if the \doxylink{class_pokemon_card}{Pokemon\+Card} is able to attack
+
+\+: Checks if the \doxylink{class_pokemon_card}{Pokemon\+Card} is able to attack, if it is active, not dead and if the cost is less than or equal to the actual cost 
+\begin{DoxyParams}{Parameters}
+{\em } & {\ttfamily cost}\+: int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: bool 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+\+: Not used yet
+\end{DoxyWarning}
 
 
 Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00081}{81}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
@@ -113,6 +158,11 @@ Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00081}{81}} of fi
 \doxysubsubsection{\texorpdfstring{activate()}{activate()}}
 {\footnotesize\ttfamily void Pokemon\+Card\+::activate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\+: Activates the \doxylink{class_pokemon_card}{Pokemon\+Card}
+
+\+: Activates the \doxylink{class_pokemon_card}{Pokemon\+Card}, if it is not already active (default state) \begin{DoxyReturn}{Returns}
+\+: None
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00047}{47}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
@@ -123,7 +173,23 @@ Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00047}{47}} of fi
 \doxysubsubsection{\texorpdfstring{displayInfo()}{displayInfo()}}
 {\footnotesize\ttfamily void Pokemon\+Card\+::display\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+\+: Displays the information of the \doxylink{class_pokemon_card}{Pokemon\+Card}
 
+\+: Displays the information of the \doxylink{class_pokemon_card}{Pokemon\+Card} \+:
+\begin{DoxyItemize}
+\item Pokémon name
+\item Pokémon type
+\item Family type
+\item Evolution level
+\item max HP
+\item the current HP
+\item the attacks and their details \begin{DoxyReturn}{Returns}
+\+: None
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000002}{Bug}}]\+: Displaying the actual cost of the \doxylink{class_pokemon_card}{Pokemon\+Card} isn\textquotesingle{}t working properly. \end{DoxyRefDesc}
+
+\end{DoxyItemize}
 
 Implements \mbox{\hyperlink{class_card_a6aaed5bcdbd1dc28a3d07c1eff290589}{Card}}.
 
@@ -137,6 +203,12 @@ Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00188}{188}} of f
 \doxysubsubsection{\texorpdfstring{getActualCost()}{getActualCost()}}
 {\footnotesize\ttfamily int Pokemon\+Card\+::get\+Actual\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\+: Returns the actual cost of the \doxylink{class_pokemon_card}{Pokemon\+Card} \begin{DoxyReturn}{Returns}
+\+: actual\+Cost\+: int 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+\+: Not used yet
+\end{DoxyWarning}
 
 
 Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00161}{161}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
@@ -147,6 +219,14 @@ Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00161}{161}} of f
 \doxysubsubsection{\texorpdfstring{getAttack()}{getAttack()}}
 {\footnotesize\ttfamily const tuple$<$ int, int, string, int $>$ \& Pokemon\+Card\+::get\+Attack (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{attack\+Index }\end{DoxyParamCaption}) const}
 
+\+: Returns the attack at the given index 
+\begin{DoxyParams}{Parameters}
+{\em } & {\ttfamily attack\+Index}\+: size\+\_\+t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: attack\+: tuple$<$int, int, string, int$>$
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00132}{132}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
@@ -157,6 +237,9 @@ Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00132}{132}} of f
 \doxysubsubsection{\texorpdfstring{getAttacks()}{getAttacks()}}
 {\footnotesize\ttfamily const vector$<$ tuple$<$ int, int, string, int $>$ $>$ \& Pokemon\+Card\+::get\+Attacks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\+: Returns the attacks of the \doxylink{class_pokemon_card}{Pokemon\+Card} \begin{DoxyReturn}{Returns}
+\+: attacks\+: vector$<$tuple$<$int, int, string, int$>$$>$
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00124}{124}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
@@ -167,6 +250,9 @@ Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00124}{124}} of f
 \doxysubsubsection{\texorpdfstring{getEvolutionLevel()}{getEvolutionLevel()}}
 {\footnotesize\ttfamily int Pokemon\+Card\+::get\+Evolution\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\+: Returns the evolution level of the \doxylink{class_pokemon_card}{Pokemon\+Card} \begin{DoxyReturn}{Returns}
+\+: evolution\+Level\+: int
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00108}{108}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
@@ -177,6 +263,9 @@ Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00108}{108}} of f
 \doxysubsubsection{\texorpdfstring{getFamilyType()}{getFamilyType()}}
 {\footnotesize\ttfamily const string \& Pokemon\+Card\+::get\+Family\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\+: Returns the family type of the \doxylink{class_pokemon_card}{Pokemon\+Card} \begin{DoxyReturn}{Returns}
+\+: family\+Type\+: string
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00100}{100}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
@@ -187,15 +276,12 @@ Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00100}{100}} of f
 \doxysubsubsection{\texorpdfstring{getHP()}{getHP()}}
 {\footnotesize\ttfamily int Pokemon\+Card\+::get\+HP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\+: Returns the HP of the \doxylink{class_pokemon_card}{Pokemon\+Card} \begin{DoxyReturn}{Returns}
+\+: hp\+: int
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00116}{116}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
-
-\Hypertarget{class_pokemon_card_a565b43603971cb45ad38fb93f5e6aed9}\label{class_pokemon_card_a565b43603971cb45ad38fb93f5e6aed9} 
-\index{PokemonCard@{PokemonCard}!getHp@{getHp}}
-\index{getHp@{getHp}!PokemonCard@{PokemonCard}}
-\doxysubsubsection{\texorpdfstring{getHp()}{getHp()}}
-{\footnotesize\ttfamily int Pokemon\+Card\+::get\+Hp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 \Hypertarget{class_pokemon_card_ad1c3977508f68217c70365b64956e07b}\label{class_pokemon_card_ad1c3977508f68217c70365b64956e07b} 
 \index{PokemonCard@{PokemonCard}!getMaxHp@{getMaxHp}}
@@ -203,6 +289,9 @@ Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00116}{116}} of f
 \doxysubsubsection{\texorpdfstring{getMaxHp()}{getMaxHp()}}
 {\footnotesize\ttfamily int Pokemon\+Card\+::get\+Max\+Hp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\+: Returns the max HP of the \doxylink{class_pokemon_card}{Pokemon\+Card} \begin{DoxyReturn}{Returns}
+\+: max\+HP\+: int
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00153}{153}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
@@ -213,6 +302,9 @@ Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00153}{153}} of f
 \doxysubsubsection{\texorpdfstring{getNumberOfAttacks()}{getNumberOfAttacks()}}
 {\footnotesize\ttfamily size\+\_\+t Pokemon\+Card\+::get\+Number\+Of\+Attacks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\+: Returns the number of attacks of the \doxylink{class_pokemon_card}{Pokemon\+Card} \begin{DoxyReturn}{Returns}
+\+: attacks.\+size()\+: size\+\_\+t
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00145}{145}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
@@ -223,6 +315,9 @@ Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00145}{145}} of f
 \doxysubsubsection{\texorpdfstring{getPokemonType()}{getPokemonType()}}
 {\footnotesize\ttfamily const string \& Pokemon\+Card\+::get\+Pokemon\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\+: Returns the Pokémon type of the \doxylink{class_pokemon_card}{Pokemon\+Card} \begin{DoxyReturn}{Returns}
+\+: pokemon\+Type\+: string
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00092}{92}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
@@ -233,6 +328,9 @@ Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00092}{92}} of fi
 \doxysubsubsection{\texorpdfstring{incrementActualCost()}{incrementActualCost()}}
 {\footnotesize\ttfamily void Pokemon\+Card\+::increment\+Actual\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\+: Increments the actual cost of the \doxylink{class_pokemon_card}{Pokemon\+Card} by one \begin{DoxyReturn}{Returns}
+\+: None
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00060}{60}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
@@ -243,6 +341,12 @@ Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00060}{60}} of fi
 \doxysubsubsection{\texorpdfstring{isActive()}{isActive()}}
 {\footnotesize\ttfamily bool Pokemon\+Card\+::is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\+: Returns the active state of the \doxylink{class_pokemon_card}{Pokemon\+Card} \begin{DoxyReturn}{Returns}
+\+: active\+: bool 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+\+: Not used yet
+\end{DoxyWarning}
 
 
 Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00170}{170}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
@@ -253,6 +357,12 @@ Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00170}{170}} of f
 \doxysubsubsection{\texorpdfstring{isDead()}{isDead()}}
 {\footnotesize\ttfamily bool Pokemon\+Card\+::is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+\+: Returns the dead state of the \doxylink{class_pokemon_card}{Pokemon\+Card} \begin{DoxyReturn}{Returns}
+\+: dead\+: bool 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+\+: Not used yet
+\end{DoxyWarning}
 
 
 Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00179}{179}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
@@ -263,6 +373,16 @@ Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00179}{179}} of f
 \doxysubsubsection{\texorpdfstring{receiveDamage()}{receiveDamage()}}
 {\footnotesize\ttfamily void Pokemon\+Card\+::receive\+Damage (\begin{DoxyParamCaption}\item[{const int}]{damage }\end{DoxyParamCaption})}
 
+\+: Receives damage
+
+\+: Receives damage, set dead to true if the \doxylink{class_pokemon_card}{Pokemon\+Card}\textquotesingle{}s hp is less than or equal to 0 
+\begin{DoxyParams}{Parameters}
+{\em } & {\ttfamily damage}\+: int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: None
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00068}{68}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
@@ -273,6 +393,16 @@ Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00068}{68}} of fi
 \doxysubsubsection{\texorpdfstring{setHp()}{setHp()}}
 {\footnotesize\ttfamily void Pokemon\+Card\+::set\+Hp (\begin{DoxyParamCaption}\item[{int}]{hp }\end{DoxyParamCaption})}
 
+\+: Sets the HP of the \doxylink{class_pokemon_card}{Pokemon\+Card}
+
+\+: Sets the HP of the \doxylink{class_pokemon_card}{Pokemon\+Card}, used by the \doxylink{class_trainer_card}{Trainer\+Card} 
+\begin{DoxyParams}{Parameters}
+{\em } & \+\_\+hp\+: int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: None
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00223}{223}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
@@ -281,5 +411,5 @@ Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00223}{223}} of f
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-headers/\mbox{\hyperlink{_pokemon_card_8h}{Pokemon\+Card.\+h}}\item 
-\mbox{\hyperlink{_pokemon_card_8cpp}{Pokemon\+Card.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/ecole/\+One\+Drive -\/ uha.\+fr/\+Documents/\+Dev/\+C++/\+Pokemon\+Trading\+Card\+Game/headers/\mbox{\hyperlink{_pokemon_card_8h}{Pokemon\+Card.\+h}}\item 
+C\+:/\+Users/ecole/\+One\+Drive -\/ uha.\+fr/\+Documents/\+Dev/\+C++/\+Pokemon\+Trading\+Card\+Game/\mbox{\hyperlink{_pokemon_card_8cpp}{Pokemon\+Card.\+cpp}}\end{DoxyCompactItemize}
