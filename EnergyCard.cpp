@@ -1,20 +1,19 @@
 //
-// Created by ecole on 22/12/2023.
+// Created by ecole on 05/01/2024.
 //
 
 #include "headers/EnergyCard.h"
 
-string EnergyCard::getCardName() const{
-    return cardName;
+EnergyCard::EnergyCard(const string &_energyType):
+Card("Energy"), energyType(_energyType)
+{}
+
+void EnergyCard::displayInfo() const {
+    cout << endl << "Card name: ";
+    Card::displayInfo();
+    cout << endl << "Energy type: " << energyType;
 }
 
-string EnergyCard::getEnergyType() const {
+const string &EnergyCard::getEnergyType() const {
     return energyType;
 }
-
-EnergyCard::EnergyCard(const string _energyType):
-energyType(_energyType)
-{
-}
-
-

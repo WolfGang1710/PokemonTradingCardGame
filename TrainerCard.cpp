@@ -1,27 +1,29 @@
 //
-// Created by ecole on 22/12/2023.
+// Created by ecole on 05/01/2024.
 //
 
 #include "headers/TrainerCard.h"
-#include "headers/Player.h"
-#include <iostream>
 
-TrainerCard::TrainerCard(const string trainerName, const string _trainerEffect) :
-cardName(trainerName), trainerEffect(_trainerEffect)
+TrainerCard::TrainerCard(const string& _trainerName, const string& _trainerEffect):
+Card(_trainerName), trainerEffect(_trainerEffect)
 {
 }
 
-string TrainerCard::getCardName() const {
-    /**
-     * @returns the name of the TrainerCard.
-     */
-    return cardName;
+void TrainerCard::displayInfo() const {
+    cout << endl << "Trainer Card: ";
+    Card::displayInfo(); // Affiche le nom du dresseur Pokémon
+    cout << "Trainer Effect: " << trainerEffect << endl;
 }
 
-string TrainerCard::getTrainerEffect() const {
-    /**
-     * @params index: the index of the TrainerCard in the Player's bench.
-     * @returns the effect of the TrainerCard.
-     */
+void TrainerCard::applyTrainerEffect() const {
+    if(trainerEffect == "heal all your action Pokemon") {
+        cout << endl << "Your Pokémon's energy is at its peak again!";
+        // code
+    } else {
+        throw invalid_argument("Invalid trainer effect: " + trainerEffect);
+    }
+}
+
+const string &TrainerCard::getTrainerEffect() const {
     return trainerEffect;
 }

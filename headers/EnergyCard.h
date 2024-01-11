@@ -1,24 +1,25 @@
 //
-// Created by ecole on 22/12/2023.
+// Created by ecole on 05/01/2024.
 //
 
 #ifndef POKEMONTRADINGCARDGAME_ENERGYCARD_H
 #define POKEMONTRADINGCARDGAME_ENERGYCARD_H
 
-
 #include "Card.h"
+#include <string>
+
+using namespace std;
+
 
 class EnergyCard : public Card{
-//protected:
-//    string CardName="Energy";
 private:
-    string cardName="Energy";
     string energyType;
 public:
-    EnergyCard(const string energyType);
+    EnergyCard(const string& energyType);
+    void displayInfo() const override;
+    virtual ~EnergyCard() = default;
 
-    string getCardName() const;
-    string getEnergyType() const;
+    const string &getEnergyType() const;
 };
 
 

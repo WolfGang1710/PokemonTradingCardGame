@@ -1,21 +1,24 @@
 //
-// Created by ecole on 22/12/2023.
+// Created by ecole on 05/01/2024.
 //
 
 #ifndef POKEMONTRADINGCARDGAME_TRAINERCARD_H
 #define POKEMONTRADINGCARDGAME_TRAINERCARD_H
 
-
 #include "Card.h"
+#include <iostream>
 
-class TrainerCard : public Card{
+
+class TrainerCard : public Card {
 private:
-    string cardName;
     string trainerEffect;
 public:
-    TrainerCard(const string trainerName, const string trainerEffect);
-    string getCardName() const;
-    string getTrainerEffect() const;
+    TrainerCard(const string& trainerName, const string& trainerEffect);
+    void displayInfo() const override;
+    virtual ~TrainerCard() = default;
+    void applyTrainerEffect() const;
+
+    const string &getTrainerEffect() const;
 };
 
 

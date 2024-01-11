@@ -1,19 +1,23 @@
 //
-// Created by ecole on 21/12/2023.
+// Created by ecole on 05/01/2024.
 //
 
 #ifndef POKEMONTRADINGCARDGAME_CARD_H
 #define POKEMONTRADINGCARDGAME_CARD_H
-
+#include <iostream>
 #include <string>
-
 using namespace std;
 
 class Card {
-private:
+protected:
     string cardName;
 public:
-    virtual void displayInfo();
+    Card(const string& cardName);
+    virtual ~Card() = default;
+
+    virtual void displayInfo() const = 0;
+
+    const string &getCardName() const;
 };
 
 
