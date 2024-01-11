@@ -50,3 +50,12 @@ PokemonTradingCardGame
 - [x] Créer les classes de cartes Player
 - [ ] Fixer les problèmes des actualCost
 - [ ] Implémenter la limitation à deux attaques (actuellement, pas de limite)
+
+## Sources
+
+- [push_back](https://en.cppreference.com/w/cpp/container/vector/push_back)
+- [emplace_back](https://en.cppreference.com/w/cpp/container/vector/emplace_back)
+- [ZesteDeSavoir - Mais où est passé la doc](https://zestedesavoir.com/tutoriels/822/la-programmation-en-c-moderne/etre-un-developpeur/mais-ou-est-la-doc/)
+- [get_allocator](https://cplusplus.com/reference/vector/vector/get_allocator/)
+- [Compilateur C++ online pour tester](https://www.onlinegdb.com/online_c++_compiler)
+- 
