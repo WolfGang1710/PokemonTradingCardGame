@@ -1,0 +1,64 @@
+\doxysection{Pokemon\+Card.\+h}
+\hypertarget{_pokemon_card_8h_source}{}\label{_pokemon_card_8h_source}\index{headers/PokemonCard.h@{headers/PokemonCard.h}}
+\mbox{\hyperlink{_pokemon_card_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00002}00002\ \textcolor{comment}{//\ Created\ by\ ecole\ on\ 05/01/2024.}}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00003}00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00005}00005\ \textcolor{preprocessor}{\#ifndef\ POKEMONTRADINGCARDGAME\_POKEMONCARD\_H}}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00006}00006\ \textcolor{preprocessor}{\#define\ POKEMONTRADINGCARDGAME\_POKEMONCARD\_H}}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <tuple>}}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_card_8h}{Card.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00013}00013\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00015}\mbox{\hyperlink{class_pokemon_card}{00015}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pokemon_card}{PokemonCard}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_card}{Card}}\{}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00016}00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00017}00017\ \ \ \ \ \textcolor{keywordtype}{string}\ pokemonType;}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00018}00018\ \ \ \ \ \textcolor{keywordtype}{string}\ familyType;}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00019}00019\ \ \ \ \ \textcolor{keywordtype}{int}\ evolutionLevel;}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00020}00020\ \ \ \ \ \textcolor{keywordtype}{int}\ maxHP;}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00021}00021\ \ \ \ \ \textcolor{keywordtype}{int}\ hp;}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00022}00022\ \ \ \ \ \textcolor{keywordtype}{int}\ actualCost;}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00023}00023\ \ \ \ \ vector<tuple<int,\ int,\ string,\ int>>\ attacks;\ \textcolor{comment}{//\ <cost,\ actualCost,\ description,\ damage>}}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00024}00024\ \ \ \ \ \textcolor{keywordtype}{bool}\ active;}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00025}00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ dead;}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00027}00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00028}00028\ \ \ \ \ \mbox{\hyperlink{class_pokemon_card_ac8a84853559d3c010e90dfdfb3e54618}{PokemonCard}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\mbox{\hyperlink{class_card_a83f3a0ac457214d2c1fb59511ecf8e0a}{cardName}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&pokemonType,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&familyType,}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ evolutionLevel,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ maxHP,}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ cost1,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&attackName1,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ damage1,}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ cost2,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&attackName2,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ damage2);}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00033}\mbox{\hyperlink{class_pokemon_card_a27989664c256c9a050f904b6d5f7e6b5}{00033}}\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_pokemon_card_a27989664c256c9a050f904b6d5f7e6b5}{\string~PokemonCard}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00034}00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pokemon_card_a4df92214ac812e61b67e1870ef873be2}{activate}}();}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00035}00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pokemon_card_a334527957d4c47d7a566409edeeeb7cc}{incrementActualCost}}();}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00036}00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pokemon_card_a37044d68259ba08e668dfe85e62b768a}{receiveDamage}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ damage);}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00037}00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_pokemon_card_a5c7629b510d55a2ae5fce900221367b7}{ableToAttack}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ cost)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00039}00039\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\mbox{\hyperlink{class_pokemon_card_a95a5dbec5789265b3da1d4a7f95ffb6b}{getPokemonType}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00040}00040\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\mbox{\hyperlink{class_pokemon_card_a10f8284d3120da9c9f5f13bde793c3cb}{getFamilyType}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00041}00041\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pokemon_card_a3dea8e4867084f29fb0c337d73753c7c}{getEvolutionLevel}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00042}00042\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pokemon_card_a7c45994fa9bdbbfce7cef8020f6c146d}{getHP}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00043}00043\ \ \ \ \ \textcolor{keyword}{const}\ vector<tuple<int,\ int,\ string,\ int>>\ \&\mbox{\hyperlink{class_pokemon_card_a2829860136a7af04d98e58b871243ed2}{getAttacks}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00044}00044\ \ \ \ \ \textcolor{keyword}{const}\ tuple<int,\ int,\ string,\ int>\ \&\mbox{\hyperlink{class_pokemon_card_a64bf7cbbb45eef160f87560a4846a82c}{getAttack}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{size\_t}\ attackIndex)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00045}00045\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{class_pokemon_card_ac0de04605fd400519441fc2c993c0a87}{getNumberOfAttacks}}()\ \textcolor{keyword}{const}\ ;}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00046}00046\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pokemon_card_ad1c3977508f68217c70365b64956e07b}{getMaxHp}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00047}\mbox{\hyperlink{class_pokemon_card_a565b43603971cb45ad38fb93f5e6aed9}{00047}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pokemon_card_a565b43603971cb45ad38fb93f5e6aed9}{getHp}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00048}00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pokemon_card_aa47ab388bbf776b7f4380c0c769f5df4}{setHp}}(\textcolor{keywordtype}{int}\ hp);}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00049}00049\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pokemon_card_a1733a646b80f87885df3f78564578c4c}{getActualCost}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00051}00051\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_pokemon_card_ab502932ee42dbabfb05459627578567a}{isActive}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00052}00052\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_pokemon_card_aecc875030f996cb7959c42b051242fe5}{isDead}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00054}00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pokemon_card_a8a32ee4acd511eadab90f1c0dd94bac5}{displayInfo}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00055}00055\ \};}
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{_pokemon_card_8h_source_l00058}00058\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//POKEMONTRADINGCARDGAME\_POKEMONCARD\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,41 @@
+\doxysection{Energy\+Card.\+cpp}
+\hypertarget{_energy_card_8cpp_source}{}\label{_energy_card_8cpp_source}\mbox{\hyperlink{_energy_card_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00002}00002\ \textcolor{comment}{//\ Created\ by\ ecole\ on\ 05/01/2024.}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00003}00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_energy_card_8h}{headers/EnergyCard.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00007}\mbox{\hyperlink{class_energy_card_a0a832ce09c51f7fb9f9dc11aa65d36de}{00007}}\ \mbox{\hyperlink{class_energy_card_a0a832ce09c51f7fb9f9dc11aa65d36de}{EnergyCard::EnergyCard}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\_energyType):}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00008}00008\ \mbox{\hyperlink{class_card}{Card}}(\textcolor{stringliteral}{"{}Energy"{}}),\ energyType(\_energyType)}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00009}00009\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00010}00010\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *\ @brief:\ Constructor\ for\ EnergyCard}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00011}00011\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *\ @details:\ Creates\ an\ EnergyCard\ with\ the\ given\ energyType.\ By\ default,\ the\ name\ of\ the\ card\ is\ "{}Energy"{}\ and\ cannot\ be\ changed.}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00012}00012\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *\ @param:\ \`{}\_energyType`:\ string}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00013}00013\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *\ @return:\ None}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00014}00014\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00015}00015\ \{\}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00017}\mbox{\hyperlink{class_energy_card_ad7cf9208f6936637428e44308cf38448}{00017}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_energy_card_ad7cf9208f6936637428e44308cf38448}{EnergyCard::displayInfo}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00018}00018\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00019}00019\ \textcolor{comment}{\ \ \ \ \ *\ @brief:\ Displays\ the\ information\ of\ the\ EnergyCard}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00020}00020\ \textcolor{comment}{\ \ \ \ \ *\ @details:\ Displays\ the\ information\ of\ the\ EnergyCard,\ including\ the\ name\ of\ the\ card\ and\ the\ energy\ type.}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00021}00021\ \textcolor{comment}{\ \ \ \ \ *\ @param:\ None}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00022}00022\ \textcolor{comment}{\ \ \ \ \ *\ @return:\ None}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00023}00023\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00024}00024\ \ \ \ \ cout\ <<\ endl\ <<\ \textcolor{stringliteral}{"{}Card\ name:\ "{}};}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00025}00025\ \ \ \ \ \mbox{\hyperlink{class_card_a6aaed5bcdbd1dc28a3d07c1eff290589}{Card::displayInfo}}();}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00026}00026\ \ \ \ \ cout\ <<\ endl\ <<\ \textcolor{stringliteral}{"{}Energy\ type:\ "{}}\ <<\ energyType;}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00027}00027\ \}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00029}\mbox{\hyperlink{class_energy_card_a8759d781a8e7a193515c4177de1f1b33}{00029}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\mbox{\hyperlink{class_energy_card_a8759d781a8e7a193515c4177de1f1b33}{EnergyCard::getEnergyType}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00030}00030\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00031}00031\ \textcolor{comment}{\ \ \ \ \ *\ @brief:\ Returns\ the\ energy\ type\ of\ the\ EnergyCard}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00032}00032\ \textcolor{comment}{\ \ \ \ \ *\ @param:\ None}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00033}00033\ \textcolor{comment}{\ \ \ \ \ *\ @return:\ energyType:\ string}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00034}00034\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00035}00035\ \ \ \ \ \textcolor{keywordflow}{return}\ energyType;}
+\DoxyCodeLine{\Hypertarget{_energy_card_8cpp_source_l00036}00036\ \}}
+
+\end{DoxyCode}

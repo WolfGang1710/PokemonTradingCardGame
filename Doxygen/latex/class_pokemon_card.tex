@@ -1,0 +1,285 @@
+\doxysection{Pokemon\+Card Class Reference}
+\hypertarget{class_pokemon_card}{}\label{class_pokemon_card}\index{PokemonCard@{PokemonCard}}
+
+
+{\ttfamily \#include $<$Pokemon\+Card.\+h$>$}
+
+Inheritance diagram for Pokemon\+Card\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pokemon_card}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pokemon_card_ac8a84853559d3c010e90dfdfb3e54618}{Pokemon\+Card}} (const string \&\mbox{\hyperlink{class_card_a83f3a0ac457214d2c1fb59511ecf8e0a}{card\+Name}}, const string \&pokemon\+Type, const string \&family\+Type, const int evolution\+Level, const int max\+HP, const int cost1, const string \&attack\+Name1, const int damage1, const int cost2, const string \&attack\+Name2, const int damage2)
+\item 
+virtual \mbox{\hyperlink{class_pokemon_card_a27989664c256c9a050f904b6d5f7e6b5}{\texorpdfstring{$\sim$}{\string~}\+Pokemon\+Card}} ()=default
+\item 
+void \mbox{\hyperlink{class_pokemon_card_a4df92214ac812e61b67e1870ef873be2}{activate}} ()
+\item 
+void \mbox{\hyperlink{class_pokemon_card_a334527957d4c47d7a566409edeeeb7cc}{increment\+Actual\+Cost}} ()
+\item 
+void \mbox{\hyperlink{class_pokemon_card_a37044d68259ba08e668dfe85e62b768a}{receive\+Damage}} (const int damage)
+\item 
+bool \mbox{\hyperlink{class_pokemon_card_a5c7629b510d55a2ae5fce900221367b7}{able\+To\+Attack}} (const int cost) const
+\item 
+const string \& \mbox{\hyperlink{class_pokemon_card_a95a5dbec5789265b3da1d4a7f95ffb6b}{get\+Pokemon\+Type}} () const
+\item 
+const string \& \mbox{\hyperlink{class_pokemon_card_a10f8284d3120da9c9f5f13bde793c3cb}{get\+Family\+Type}} () const
+\item 
+int \mbox{\hyperlink{class_pokemon_card_a3dea8e4867084f29fb0c337d73753c7c}{get\+Evolution\+Level}} () const
+\item 
+int \mbox{\hyperlink{class_pokemon_card_a7c45994fa9bdbbfce7cef8020f6c146d}{get\+HP}} () const
+\item 
+const vector$<$ tuple$<$ int, int, string, int $>$ $>$ \& \mbox{\hyperlink{class_pokemon_card_a2829860136a7af04d98e58b871243ed2}{get\+Attacks}} () const
+\item 
+const tuple$<$ int, int, string, int $>$ \& \mbox{\hyperlink{class_pokemon_card_a64bf7cbbb45eef160f87560a4846a82c}{get\+Attack}} (const size\+\_\+t attack\+Index) const
+\item 
+size\+\_\+t \mbox{\hyperlink{class_pokemon_card_ac0de04605fd400519441fc2c993c0a87}{get\+Number\+Of\+Attacks}} () const
+\item 
+int \mbox{\hyperlink{class_pokemon_card_ad1c3977508f68217c70365b64956e07b}{get\+Max\+Hp}} () const
+\item 
+int \mbox{\hyperlink{class_pokemon_card_a565b43603971cb45ad38fb93f5e6aed9}{get\+Hp}} () const
+\item 
+void \mbox{\hyperlink{class_pokemon_card_aa47ab388bbf776b7f4380c0c769f5df4}{set\+Hp}} (int hp)
+\item 
+int \mbox{\hyperlink{class_pokemon_card_a1733a646b80f87885df3f78564578c4c}{get\+Actual\+Cost}} () const
+\item 
+bool \mbox{\hyperlink{class_pokemon_card_ab502932ee42dbabfb05459627578567a}{is\+Active}} () const
+\item 
+bool \mbox{\hyperlink{class_pokemon_card_aecc875030f996cb7959c42b051242fe5}{is\+Dead}} () const
+\item 
+void \mbox{\hyperlink{class_pokemon_card_a8a32ee4acd511eadab90f1c0dd94bac5}{display\+Info}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_card}{Card}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_card_afccccdc2f928eb472b9d9f3ea352a572}{Card}} (const string \&\mbox{\hyperlink{class_card_a83f3a0ac457214d2c1fb59511ecf8e0a}{card\+Name}})
+\item 
+virtual \mbox{\hyperlink{class_card_a24d9140b69cd7fcc6b4787350fdeb5e9}{\texorpdfstring{$\sim$}{\string~}\+Card}} ()=default
+\item 
+const string \& \mbox{\hyperlink{class_card_a84138a1fdba1e2a270cc9e876d327840}{get\+Card\+Name}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_card}{Card}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_card_a83f3a0ac457214d2c1fb59511ecf8e0a}{card\+Name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_pokemon_card_8h_source_l00015}{15}} of file \mbox{\hyperlink{_pokemon_card_8h_source}{Pokemon\+Card.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pokemon_card_ac8a84853559d3c010e90dfdfb3e54618}\label{class_pokemon_card_ac8a84853559d3c010e90dfdfb3e54618} 
+\index{PokemonCard@{PokemonCard}!PokemonCard@{PokemonCard}}
+\index{PokemonCard@{PokemonCard}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{PokemonCard()}{PokemonCard()}}
+{\footnotesize\ttfamily Pokemon\+Card\+::\+Pokemon\+Card (\begin{DoxyParamCaption}\item[{const string \&}]{card\+Name,  }\item[{const string \&}]{pokemon\+Type,  }\item[{const string \&}]{family\+Type,  }\item[{const int}]{evolution\+Level,  }\item[{const int}]{max\+HP,  }\item[{const int}]{cost1,  }\item[{const string \&}]{attack\+Name1,  }\item[{const int}]{damage1,  }\item[{const int}]{cost2,  }\item[{const string \&}]{attack\+Name2,  }\item[{const int}]{damage2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
+
+\Hypertarget{class_pokemon_card_a27989664c256c9a050f904b6d5f7e6b5}\label{class_pokemon_card_a27989664c256c9a050f904b6d5f7e6b5} 
+\index{PokemonCard@{PokemonCard}!````~PokemonCard@{\texorpdfstring{$\sim$}{\string~}PokemonCard}}
+\index{````~PokemonCard@{\texorpdfstring{$\sim$}{\string~}PokemonCard}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}PokemonCard()}{\string~PokemonCard()}}
+{\footnotesize\ttfamily virtual Pokemon\+Card\+::\texorpdfstring{$\sim$}{\string~}\+Pokemon\+Card (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pokemon_card_a5c7629b510d55a2ae5fce900221367b7}\label{class_pokemon_card_a5c7629b510d55a2ae5fce900221367b7} 
+\index{PokemonCard@{PokemonCard}!ableToAttack@{ableToAttack}}
+\index{ableToAttack@{ableToAttack}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{ableToAttack()}{ableToAttack()}}
+{\footnotesize\ttfamily bool Pokemon\+Card\+::able\+To\+Attack (\begin{DoxyParamCaption}\item[{const int}]{cost }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00081}{81}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
+
+\Hypertarget{class_pokemon_card_a4df92214ac812e61b67e1870ef873be2}\label{class_pokemon_card_a4df92214ac812e61b67e1870ef873be2} 
+\index{PokemonCard@{PokemonCard}!activate@{activate}}
+\index{activate@{activate}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{activate()}{activate()}}
+{\footnotesize\ttfamily void Pokemon\+Card\+::activate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00047}{47}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
+
+\Hypertarget{class_pokemon_card_a8a32ee4acd511eadab90f1c0dd94bac5}\label{class_pokemon_card_a8a32ee4acd511eadab90f1c0dd94bac5} 
+\index{PokemonCard@{PokemonCard}!displayInfo@{displayInfo}}
+\index{displayInfo@{displayInfo}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{displayInfo()}{displayInfo()}}
+{\footnotesize\ttfamily void Pokemon\+Card\+::display\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_card_a6aaed5bcdbd1dc28a3d07c1eff290589}{Card}}.
+
+
+
+Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00188}{188}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
+
+\Hypertarget{class_pokemon_card_a1733a646b80f87885df3f78564578c4c}\label{class_pokemon_card_a1733a646b80f87885df3f78564578c4c} 
+\index{PokemonCard@{PokemonCard}!getActualCost@{getActualCost}}
+\index{getActualCost@{getActualCost}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{getActualCost()}{getActualCost()}}
+{\footnotesize\ttfamily int Pokemon\+Card\+::get\+Actual\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00161}{161}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
+
+\Hypertarget{class_pokemon_card_a64bf7cbbb45eef160f87560a4846a82c}\label{class_pokemon_card_a64bf7cbbb45eef160f87560a4846a82c} 
+\index{PokemonCard@{PokemonCard}!getAttack@{getAttack}}
+\index{getAttack@{getAttack}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{getAttack()}{getAttack()}}
+{\footnotesize\ttfamily const tuple$<$ int, int, string, int $>$ \& Pokemon\+Card\+::get\+Attack (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{attack\+Index }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00132}{132}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
+
+\Hypertarget{class_pokemon_card_a2829860136a7af04d98e58b871243ed2}\label{class_pokemon_card_a2829860136a7af04d98e58b871243ed2} 
+\index{PokemonCard@{PokemonCard}!getAttacks@{getAttacks}}
+\index{getAttacks@{getAttacks}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{getAttacks()}{getAttacks()}}
+{\footnotesize\ttfamily const vector$<$ tuple$<$ int, int, string, int $>$ $>$ \& Pokemon\+Card\+::get\+Attacks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00124}{124}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
+
+\Hypertarget{class_pokemon_card_a3dea8e4867084f29fb0c337d73753c7c}\label{class_pokemon_card_a3dea8e4867084f29fb0c337d73753c7c} 
+\index{PokemonCard@{PokemonCard}!getEvolutionLevel@{getEvolutionLevel}}
+\index{getEvolutionLevel@{getEvolutionLevel}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{getEvolutionLevel()}{getEvolutionLevel()}}
+{\footnotesize\ttfamily int Pokemon\+Card\+::get\+Evolution\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00108}{108}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
+
+\Hypertarget{class_pokemon_card_a10f8284d3120da9c9f5f13bde793c3cb}\label{class_pokemon_card_a10f8284d3120da9c9f5f13bde793c3cb} 
+\index{PokemonCard@{PokemonCard}!getFamilyType@{getFamilyType}}
+\index{getFamilyType@{getFamilyType}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{getFamilyType()}{getFamilyType()}}
+{\footnotesize\ttfamily const string \& Pokemon\+Card\+::get\+Family\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00100}{100}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
+
+\Hypertarget{class_pokemon_card_a7c45994fa9bdbbfce7cef8020f6c146d}\label{class_pokemon_card_a7c45994fa9bdbbfce7cef8020f6c146d} 
+\index{PokemonCard@{PokemonCard}!getHP@{getHP}}
+\index{getHP@{getHP}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{getHP()}{getHP()}}
+{\footnotesize\ttfamily int Pokemon\+Card\+::get\+HP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00116}{116}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
+
+\Hypertarget{class_pokemon_card_a565b43603971cb45ad38fb93f5e6aed9}\label{class_pokemon_card_a565b43603971cb45ad38fb93f5e6aed9} 
+\index{PokemonCard@{PokemonCard}!getHp@{getHp}}
+\index{getHp@{getHp}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{getHp()}{getHp()}}
+{\footnotesize\ttfamily int Pokemon\+Card\+::get\+Hp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_pokemon_card_ad1c3977508f68217c70365b64956e07b}\label{class_pokemon_card_ad1c3977508f68217c70365b64956e07b} 
+\index{PokemonCard@{PokemonCard}!getMaxHp@{getMaxHp}}
+\index{getMaxHp@{getMaxHp}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{getMaxHp()}{getMaxHp()}}
+{\footnotesize\ttfamily int Pokemon\+Card\+::get\+Max\+Hp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00153}{153}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
+
+\Hypertarget{class_pokemon_card_ac0de04605fd400519441fc2c993c0a87}\label{class_pokemon_card_ac0de04605fd400519441fc2c993c0a87} 
+\index{PokemonCard@{PokemonCard}!getNumberOfAttacks@{getNumberOfAttacks}}
+\index{getNumberOfAttacks@{getNumberOfAttacks}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{getNumberOfAttacks()}{getNumberOfAttacks()}}
+{\footnotesize\ttfamily size\+\_\+t Pokemon\+Card\+::get\+Number\+Of\+Attacks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00145}{145}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
+
+\Hypertarget{class_pokemon_card_a95a5dbec5789265b3da1d4a7f95ffb6b}\label{class_pokemon_card_a95a5dbec5789265b3da1d4a7f95ffb6b} 
+\index{PokemonCard@{PokemonCard}!getPokemonType@{getPokemonType}}
+\index{getPokemonType@{getPokemonType}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{getPokemonType()}{getPokemonType()}}
+{\footnotesize\ttfamily const string \& Pokemon\+Card\+::get\+Pokemon\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00092}{92}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
+
+\Hypertarget{class_pokemon_card_a334527957d4c47d7a566409edeeeb7cc}\label{class_pokemon_card_a334527957d4c47d7a566409edeeeb7cc} 
+\index{PokemonCard@{PokemonCard}!incrementActualCost@{incrementActualCost}}
+\index{incrementActualCost@{incrementActualCost}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{incrementActualCost()}{incrementActualCost()}}
+{\footnotesize\ttfamily void Pokemon\+Card\+::increment\+Actual\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00060}{60}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
+
+\Hypertarget{class_pokemon_card_ab502932ee42dbabfb05459627578567a}\label{class_pokemon_card_ab502932ee42dbabfb05459627578567a} 
+\index{PokemonCard@{PokemonCard}!isActive@{isActive}}
+\index{isActive@{isActive}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{isActive()}{isActive()}}
+{\footnotesize\ttfamily bool Pokemon\+Card\+::is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00170}{170}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
+
+\Hypertarget{class_pokemon_card_aecc875030f996cb7959c42b051242fe5}\label{class_pokemon_card_aecc875030f996cb7959c42b051242fe5} 
+\index{PokemonCard@{PokemonCard}!isDead@{isDead}}
+\index{isDead@{isDead}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{isDead()}{isDead()}}
+{\footnotesize\ttfamily bool Pokemon\+Card\+::is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00179}{179}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
+
+\Hypertarget{class_pokemon_card_a37044d68259ba08e668dfe85e62b768a}\label{class_pokemon_card_a37044d68259ba08e668dfe85e62b768a} 
+\index{PokemonCard@{PokemonCard}!receiveDamage@{receiveDamage}}
+\index{receiveDamage@{receiveDamage}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{receiveDamage()}{receiveDamage()}}
+{\footnotesize\ttfamily void Pokemon\+Card\+::receive\+Damage (\begin{DoxyParamCaption}\item[{const int}]{damage }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00068}{68}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
+
+\Hypertarget{class_pokemon_card_aa47ab388bbf776b7f4380c0c769f5df4}\label{class_pokemon_card_aa47ab388bbf776b7f4380c0c769f5df4} 
+\index{PokemonCard@{PokemonCard}!setHp@{setHp}}
+\index{setHp@{setHp}!PokemonCard@{PokemonCard}}
+\doxysubsubsection{\texorpdfstring{setHp()}{setHp()}}
+{\footnotesize\ttfamily void Pokemon\+Card\+::set\+Hp (\begin{DoxyParamCaption}\item[{int}]{hp }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_pokemon_card_8cpp_source_l00223}{223}} of file \mbox{\hyperlink{_pokemon_card_8cpp_source}{Pokemon\+Card.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_pokemon_card_8h}{Pokemon\+Card.\+h}}\item 
+\mbox{\hyperlink{_pokemon_card_8cpp}{Pokemon\+Card.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,148 @@
+\doxysection{Player Class Reference}
+\hypertarget{class_player}{}\label{class_player}\index{Player@{Player}}
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_afebd53dc7e50fb8b339933d8e327efea}{Player}} (const string \&player\+Name)
+\item 
+\mbox{\hyperlink{class_player_a749d2c00e1fe0f5c2746f7505a58c062}{\texorpdfstring{$\sim$}{\string~}\+Player}} ()
+\item 
+void \mbox{\hyperlink{class_player_a8cf6ce8c81531c3cebae6a9efafcaa17}{add\+Card\+To\+Bench}} (\mbox{\hyperlink{class_card}{Card}} \texorpdfstring{$\ast$}{*}card)
+\item 
+void \mbox{\hyperlink{class_player_a91f6319a7b7b9180697167c57c5ffdf4}{activate\+Pokemon\+Card}} (size\+\_\+t card\+Index)
+\item 
+void \mbox{\hyperlink{class_player_ac2f3e76899614d2aa0d3b03f06929230}{attach\+Energy\+Card}} (size\+\_\+t const pokemon\+Index, size\+\_\+t const energy\+Index)
+\item 
+void \mbox{\hyperlink{class_player_aa0427fd3208c2aac42f7eaf8962f9331}{attack}} (size\+\_\+t const pokemon\+Index, size\+\_\+t const attack\+Index, \mbox{\hyperlink{class_player}{Player}} \&player, size\+\_\+t const enemy\+Pokemon\+Index)
+\item 
+void \mbox{\hyperlink{class_player_aee3c5c983a7e4ce579719508adbf9e55}{use\+Trainer}} (size\+\_\+t const trainer\+Index)
+\item 
+void \mbox{\hyperlink{class_player_abafb04413e27f186575e6147db8e71a4}{display\+Bench}} () const
+\item 
+void \mbox{\hyperlink{class_player_a95b78658e0728249e318c98a2188cc87}{display\+Action}} () const
+\item 
+void \mbox{\hyperlink{class_player_a82917017543c1a20d50edec9e65eec42}{display\+Info}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_player_8h_source_l00015}{15}} of file \mbox{\hyperlink{_player_8h_source}{Player.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_player_afebd53dc7e50fb8b339933d8e327efea}\label{class_player_afebd53dc7e50fb8b339933d8e327efea} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{const string \&}]{player\+Name }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_player_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{_player_8cpp_source}{Player.\+cpp}}.
+
+\Hypertarget{class_player_a749d2c00e1fe0f5c2746f7505a58c062}\label{class_player_a749d2c00e1fe0f5c2746f7505a58c062} 
+\index{Player@{Player}!````~Player@{\texorpdfstring{$\sim$}{\string~}Player}}
+\index{````~Player@{\texorpdfstring{$\sim$}{\string~}Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Player()}{\string~Player()}}
+{\footnotesize\ttfamily Player\+::\texorpdfstring{$\sim$}{\string~}\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_player_8cpp_source_l00015}{15}} of file \mbox{\hyperlink{_player_8cpp_source}{Player.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_player_a91f6319a7b7b9180697167c57c5ffdf4}\label{class_player_a91f6319a7b7b9180697167c57c5ffdf4} 
+\index{Player@{Player}!activatePokemonCard@{activatePokemonCard}}
+\index{activatePokemonCard@{activatePokemonCard}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{activatePokemonCard()}{activatePokemonCard()}}
+{\footnotesize\ttfamily void Player\+::activate\+Pokemon\+Card (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{card\+Index }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_player_8cpp_source_l00040}{40}} of file \mbox{\hyperlink{_player_8cpp_source}{Player.\+cpp}}.
+
+\Hypertarget{class_player_a8cf6ce8c81531c3cebae6a9efafcaa17}\label{class_player_a8cf6ce8c81531c3cebae6a9efafcaa17} 
+\index{Player@{Player}!addCardToBench@{addCardToBench}}
+\index{addCardToBench@{addCardToBench}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addCardToBench()}{addCardToBench()}}
+{\footnotesize\ttfamily void Player\+::add\+Card\+To\+Bench (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_card}{Card}} \texorpdfstring{$\ast$}{*}}]{card }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_player_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{_player_8cpp_source}{Player.\+cpp}}.
+
+\Hypertarget{class_player_ac2f3e76899614d2aa0d3b03f06929230}\label{class_player_ac2f3e76899614d2aa0d3b03f06929230} 
+\index{Player@{Player}!attachEnergyCard@{attachEnergyCard}}
+\index{attachEnergyCard@{attachEnergyCard}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{attachEnergyCard()}{attachEnergyCard()}}
+{\footnotesize\ttfamily void Player\+::attach\+Energy\+Card (\begin{DoxyParamCaption}\item[{size\+\_\+t const}]{pokemon\+Index,  }\item[{size\+\_\+t const}]{energy\+Index }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_player_8cpp_source_l00058}{58}} of file \mbox{\hyperlink{_player_8cpp_source}{Player.\+cpp}}.
+
+\Hypertarget{class_player_aa0427fd3208c2aac42f7eaf8962f9331}\label{class_player_aa0427fd3208c2aac42f7eaf8962f9331} 
+\index{Player@{Player}!attack@{attack}}
+\index{attack@{attack}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily void Player\+::attack (\begin{DoxyParamCaption}\item[{size\+\_\+t const}]{pokemon\+Index,  }\item[{size\+\_\+t const}]{attack\+Index,  }\item[{\mbox{\hyperlink{class_player}{Player}} \&}]{player,  }\item[{size\+\_\+t const}]{enemy\+Pokemon\+Index }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_player_8cpp_source_l00080}{80}} of file \mbox{\hyperlink{_player_8cpp_source}{Player.\+cpp}}.
+
+\Hypertarget{class_player_a95b78658e0728249e318c98a2188cc87}\label{class_player_a95b78658e0728249e318c98a2188cc87} 
+\index{Player@{Player}!displayAction@{displayAction}}
+\index{displayAction@{displayAction}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{displayAction()}{displayAction()}}
+{\footnotesize\ttfamily void Player\+::display\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_player_8cpp_source_l00175}{175}} of file \mbox{\hyperlink{_player_8cpp_source}{Player.\+cpp}}.
+
+\Hypertarget{class_player_abafb04413e27f186575e6147db8e71a4}\label{class_player_abafb04413e27f186575e6147db8e71a4} 
+\index{Player@{Player}!displayBench@{displayBench}}
+\index{displayBench@{displayBench}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{displayBench()}{displayBench()}}
+{\footnotesize\ttfamily void Player\+::display\+Bench (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_player_8cpp_source_l00156}{156}} of file \mbox{\hyperlink{_player_8cpp_source}{Player.\+cpp}}.
+
+\Hypertarget{class_player_a82917017543c1a20d50edec9e65eec42}\label{class_player_a82917017543c1a20d50edec9e65eec42} 
+\index{Player@{Player}!displayInfo@{displayInfo}}
+\index{displayInfo@{displayInfo}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{displayInfo()}{displayInfo()}}
+{\footnotesize\ttfamily void Player\+::display\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{_player_8cpp_source_l00195}{195}} of file \mbox{\hyperlink{_player_8cpp_source}{Player.\+cpp}}.
+
+\Hypertarget{class_player_aee3c5c983a7e4ce579719508adbf9e55}\label{class_player_aee3c5c983a7e4ce579719508adbf9e55} 
+\index{Player@{Player}!useTrainer@{useTrainer}}
+\index{useTrainer@{useTrainer}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{useTrainer()}{useTrainer()}}
+{\footnotesize\ttfamily void Player\+::use\+Trainer (\begin{DoxyParamCaption}\item[{size\+\_\+t const}]{trainer\+Index }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_player_8cpp_source_l00137}{137}} of file \mbox{\hyperlink{_player_8cpp_source}{Player.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{_player_8h}{Player.\+h}}\item 
+\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

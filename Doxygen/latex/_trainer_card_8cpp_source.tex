@@ -1,0 +1,34 @@
+\doxysection{Trainer\+Card.\+cpp}
+\hypertarget{_trainer_card_8cpp_source}{}\label{_trainer_card_8cpp_source}\mbox{\hyperlink{_trainer_card_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00001}00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00002}00002\ \textcolor{comment}{//\ Created\ by\ ecole\ on\ 05/01/2024.}}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00003}00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_trainer_card_8h}{headers/TrainerCard.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00007}\mbox{\hyperlink{class_trainer_card_aa2a9eee0dc6a4b2ac05e02123438d1ed}{00007}}\ \mbox{\hyperlink{class_trainer_card_aa2a9eee0dc6a4b2ac05e02123438d1ed}{TrainerCard::TrainerCard}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ \_trainerName,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ \_trainerEffect):}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00008}00008\ \mbox{\hyperlink{class_card}{Card}}(\_trainerName),\ trainerEffect(\_trainerEffect)}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00009}00009\ \{}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00010}00010\ \}}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00012}\mbox{\hyperlink{class_trainer_card_a28e1cd498d9f08f17ac7b9d24bfe3bdf}{00012}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trainer_card_a28e1cd498d9f08f17ac7b9d24bfe3bdf}{TrainerCard::displayInfo}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00013}00013\ \ \ \ \ cout\ <<\ endl\ <<\ \textcolor{stringliteral}{"{}Trainer\ Card:\ "{}};}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00014}00014\ \ \ \ \ \mbox{\hyperlink{class_card_a6aaed5bcdbd1dc28a3d07c1eff290589}{Card::displayInfo}}();\ \textcolor{comment}{//\ Affiche\ le\ nom\ du\ dresseur\ Pokémon}}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00015}00015\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Trainer\ Effect:\ "{}}\ <<\ trainerEffect\ <<\ endl;}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00016}00016\ \}}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00018}\mbox{\hyperlink{class_trainer_card_a673fe2f7b37bd8d8305d5d8c382c9c6f}{00018}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trainer_card_a673fe2f7b37bd8d8305d5d8c382c9c6f}{TrainerCard::applyTrainerEffect}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00019}00019\ \ \ \ \ \textcolor{keywordflow}{if}(trainerEffect\ ==\ \textcolor{stringliteral}{"{}heal\ all\ your\ action\ Pokemon"{}})\ \{}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00020}00020\ \ \ \ \ \ \ \ \ cout\ <<\ endl\ <<\ \textcolor{stringliteral}{"{}Your\ Pokémon's\ energy\ is\ at\ its\ peak\ again!"{}};}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00021}00021\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ code}}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00022}00022\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ invalid\_argument(\textcolor{stringliteral}{"{}Invalid\ trainer\ effect:\ "{}}\ +\ trainerEffect);}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00024}00024\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00025}00025\ \}}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00027}\mbox{\hyperlink{class_trainer_card_af5010892a29f7650f1bf8bd45569156b}{00027}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\mbox{\hyperlink{class_trainer_card_af5010892a29f7650f1bf8bd45569156b}{TrainerCard::getTrainerEffect}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00028}00028\ \ \ \ \ \textcolor{keywordflow}{return}\ trainerEffect;}
+\DoxyCodeLine{\Hypertarget{_trainer_card_8cpp_source_l00029}00029\ \}}
+
+\end{DoxyCode}
